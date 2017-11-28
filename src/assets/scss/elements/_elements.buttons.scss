@@ -1,0 +1,224 @@
+//
+//
+// Buttons
+//
+//
+
+@mixin button($button, $bg: $c-primary, $c: $c-white) {
+  @if $button == button {
+   		position: relative;
+   		display: inline-block;
+		padding: .25rem 1.5rem;
+		border-radius: 3px;
+		color: $c;
+		font-family: $g-font-one;
+		font-weight: 600;
+		background: $bg;	
+		border: solid 1px $bg;
+		@include transition($e: $easeInOutQuad);
+		text-transform: uppercase;
+		
+		&:hover {
+			background: $c-grey-dark;
+			border-color: $c-grey-dark;
+		}
+	}
+}
+
+//
+//
+// Decalre Buttons
+//
+//
+
+.button {
+	@include button(button);
+
+	&-primary {
+		background: $c-primary;
+		border-color: $c-primary;
+	}
+
+	&-secondary {
+		background: $c-secondary;
+		border-color: $c-secondary;
+	}
+
+	&-tertiary {
+		background: $c-tertiary;
+		border-color: $c-tertiary;
+	}
+
+	&-error {
+		background: $c-red;
+		border-color: $c-red;
+	}
+
+	&-info {
+		background: $c-cyan;
+		border-color: $c-cyan;
+	}
+
+	&-success {
+		background: $c-lime;
+		border-color: $c-lime;
+	}
+
+	&-warning {
+		background: $c-orange;
+		border-color: $c-orange;
+	}
+
+	&-shadow {
+		@include shadow(heavy);
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	&-ghost {
+		color: $c-primary;
+		background: transparent;
+
+		&:hover {
+			color: $c-white;
+		}
+
+		&.button-primary {
+			color: $c-primary;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+
+		&.button-secondary {
+			color: $c-secondary;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+
+		&.button-tertiary {
+			color: $c-tertiary;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+
+		&.button-info {
+			color: $c-cyan;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+
+		&.button-success {
+			color: $c-lime;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+
+		&.button-error {
+			color: $c-red;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+
+		&.button-warning {
+			color: $c-orange;
+
+			&:hover {
+				color: $c-white;
+			}
+		}
+	}
+
+	&-invisible {
+		color: $c-primary;
+		background: transparent;
+		border-color: transparent;
+
+		&:hover {
+			background: transparent;
+			border-color: transparent;
+		}
+
+		&.button-primary {
+			color: $c-primary;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+
+		&.button-secondary {
+			color: $c-secondary;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+
+		&.button-tertiary {
+			color: $c-tertiary;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+
+				&.button-info {
+			color: $c-cyan;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+
+		&.button-success {
+			color: $c-lime;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+
+		&.button-error {
+			color: $c-red;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+
+		&.button-warning {
+			color: $c-orange;
+
+			&:hover {
+				background: transparent;
+				border-color: transparent;
+			}
+		}
+	}
+}
+
+button {
+	@include button(button);
+	outline: none;
+	cursor: pointer;
+}

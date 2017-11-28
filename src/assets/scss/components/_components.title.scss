@@ -1,0 +1,15 @@
+.page__title {
+	background: $c-primary;
+	padding: 2rem 0;
+	background-image: url('/assets/img/title.jpg');
+	box-shadow: inset 0 1px 4px 0 rgba(#000, .7);
+	
+	&--content {
+		@include row();
+		
+		h1 {
+			color: #fff;
+			margin: 0;
+		}
+	}
+}

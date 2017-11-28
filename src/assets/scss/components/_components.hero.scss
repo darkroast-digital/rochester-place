@@ -1,0 +1,54 @@
+.hero {
+	background: $c-primary;
+	background-image: url('/assets/img/hero.jpg'); 
+	@include cover();
+	@include hw();
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	
+	&__car {
+		height: 90%;
+		position: absolute;
+		bottom: -5%;
+		right: 0;
+		
+		@include mq(m) {
+			height: 70%;
+			right: -30%;
+		}
+		
+		@include mq(s) {
+			display: none;
+		}
+	}
+	
+	&__content {
+		position: relative;
+		z-index: 10;
+		max-width: 1200px;
+		width: 1200px;
+		margin-top: -5rem;
+		
+		@include mq(m) {
+			padding: 0 1rem;
+		}
+		
+		h1 {
+			text-transform: uppercase;
+			color: #fff;
+			margin-bottom: 0;
+			line-height: 1.2;
+			margin-bottom: $vertical-rhythm * .5;
+			
+			@include mq(m) {
+				text-align: center;
+			}
+		}
+		
+		.button {
+			@include button(full, $bg: $c-secondary);
+		}
+	}
+}

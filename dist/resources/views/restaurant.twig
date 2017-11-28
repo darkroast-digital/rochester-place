@@ -1,0 +1,536 @@
+{% extends 'layouts/page.twig' %}
+{% block title %}Restaurant{% endblock %}
+{% block name %}Dine{% endblock %}
+{% block class %}restaurant-page{% endblock %}
+
+{% block content %}
+    {% for event in events %}
+        {{ event.name }}
+    {% endfor %}
+    <div class="content-first">
+        <div class="content-first-top">
+            <a href="#" class="modal-trigger modal-1">
+                <figure>
+                    <img src="{{ img('restaurant/1.jpg') }}" draggable="false">
+                    <h6>Stay up to <br>date</h6>
+                    <figcaption>News &amp; Blog</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-first-bottom">
+            <a href="#" class="modal-trigger modal-2">
+                <figure class="tall">
+                    <img src="{{ img('restaurant/2.jpg') }}" draggable="false">
+                    <h6>Not your <br>average <br> clubhouse.</h6>
+                    <figcaption>Learn More</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-1">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+            <div class="modal__image">
+                    <img src="{{ img('news__header.jpg') }}" draggable="false">
+                </div>
+                <h5>News &amp; Blog</h5>
+            <div class="row">
+            <div class="accorion js-accordion">
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Open House</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+                            <h6>Open House</h6>
+                            <hr>
+                            <p><strong>May 27 and 28th from 11-4pm</strong></p>
+                            <p>Rochester Place Resort has gone under redevelopment and opened a section of the park with 30 plus new sites. Beautiful, spacious sites, with mature trees, golf course or water views.</p>
+                            <p>Partnering with Tilbury Auto Sales & R.V. Yamaha, Rochester Place Resort is able to offer a selection of summer vacation cottages from park models to travel trailers.  There is a selection of models to view with a variety of spacious layouts and interior décor packages all available for purchase today.</p>
+                            <p>Rochester Place offers a seasonal lifestyle for everyone whether you want to golf, boat, entertain the family or just relax by the pool there is something for everyone.</p>
+                            <p>Bring your family and friends, enjoy an outdoor bbq, have a chance to win some big prizes, tour the resort and start planning your next summer vacation.</p>
+                            <p>Call for details <a href="tel:5197282361">519-728-2361</a> or website <a href="{{ path_for('home') }}">www.rochesterplace.com</a></p>
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Valen-Bae's Day</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+                            <h6>Valen-Bae's Day</h6>
+                            <hr>
+                            <p>There are so many simple things we can all do on a daily basis to bring more love into our lives. Together we can all make this an even better and more beautiful world than it already is. Valentine’s Day is a celebration of love. It’s an opportunity for us to truly connect with the most important people that surround us every day. Whether you’re celebrating the love of your spouse, kids or even a friend, love is truly an amazing thing. Although you and your partner may show your love for each other 365 days a year, it’s not every day you get to celebrate your passion and commitment for one another.</p>
+                            <p>I don’t believe that you can put a price on love but let’s face it, Valentine’s Day can get expensive. On this special day the average person spends $134 on their loved one. There are many ways to cut cost but still ensuring the most romantic day/night of the year.</p>
+                            <p>Flowers: I feel they are a must. Whether it’s one rose or a beautiful arrangement. They are pretty, smell great and will always put a smile on her face. It also creates some ambience for the dinner table. Buying your flowers at Sobeys or Zehrs is a good way to get quality flowers at a decent price. If you use the flower food provided and change the water daily they’re bound to last at least a week. If you’re a little bit crafty and have a vase lying around the house. You can buy 3 different bouquets for $20, get $5 worth of baby’s breath and do-it-yourself. Visit Pinterest for lots of great ideas. Floral Tip: White Fuji flowers (also called Spider Mums), red roses, baby’s breath and some greens look amazing together and is my favourite looking arrangement.</p>
+                            <p>Dinner: Being in the industry, both my wife and I serve and cater to guests on the daily basis. We like to go out and be takin’ care of for a night. That being said, going to a nice fancy restaurant, eating a delicious meal and splurging on a bottle of wine gets pretty pricy. Here are a couple ways to still have a romantic dinner without spending a fortune. Check your local Groupon’s for some deals in the area. Making a homemade meal, sitting down with some lit candles is always a more inexpensive and romantic way to show you care. You can also go out of a couple apps and glasses of wine than come home with a special surprise for her. A homemade dessert!</p>
+                            <p>There are limitless ways to your significant others heart, shiny diamonds, beautiful flowers, mozzarella sticks, date night or a walk down the river front. Yes, these are all great things. But, then there’s “Chocolate”. Yeah, Chocolate! Here are some of my all-time favourite chocolate dessert recipes!!!</p>
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <p><strong>White Chocolate Covered Cherries</strong></p>
+                                    <hr>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>1 ½ cups white chocolate chips</li>
+                                        <li>½ cup milk chocolate chips</li>
+                                        <li>1 ½ tbsp butter</li>
+                                        <li>1 jar maraschino cherries</li>
+                                        <li>Oreo cookie crumbs (Optional)</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>Pour jar of cherries into a strainer to remove liquid.</li>
+                                        <li>On a double boiler melt white chocolate with a tbsp of butter.</li>
+                                        <li>Dip the cherries in the white chocolate holding the stem. Rest them on a lined cookie sheet.</li>
+                                        <li>If you are adding the oreo crumbs. Just simply rest them on the crumbs and the chocolate will stick.</li>
+                                        <li>Once they’re all cover put into the fridge and start melting the milk chocolate with remaining butter.</li>
+                                        <li>Add melted milk chocolate to a sandwich bag and cut a small hole in the corner. Drizzle the chocolate side to side.</li>
+                                        <li>Back in the fridge for 5-10 minutes to harden and they are ready to serve.</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe-image">
+                                    <img src="{{ img('valentines/1.jpg') }}" draggable="false">
+                                </div>
+                            </div>
+
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <p><strong>Bae's Vegan Chocolate Peanut Butter Cheescake</strong></p>
+                                    <hr>
+                                    <h6>Crust</h6>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>6 peanut butter chocolate chip Larabar’s</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>Line a 12” spring form pan with parchment paper.</li>
+                                        <li>Unwrap Larabar’s and flatten them on the bottom of the pan.</li>
+                                    </ol>
+
+                                    <hr>
+                                    <h6>Filling</h6>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>4 ½ cups cashews</li>
+                                        <li>2/3 cup cocoa powder</li>
+                                        <li>2/3 cup peanut butter</li>
+                                        <li>¼ cup coconut butter</li>
+                                        <li>½ coconut oil</li>
+                                        <li>1 tsp salt</li>
+                                        <li>1 ½ cup maple syrup</li>
+                                        <li>1 2/3 cups water</li>
+                                        <li>4 tsp vanilla extract</li>
+                                        <li>4 drops stevia</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>In a high speed blender. Blend cashews, water, syrup, vanilla, peanut butter, and salt until completely smooth.</li>
+                                        <li>Add the coconut nut butter and oil, blend again.</li>
+                                        <li>Add cocoa powder and stevia, blend one last time.</li>
+                                        <li>Pour the mixture over the crust and freeze for 4 hours. Transfer to the fridge for 8 hours.</li>
+                                        <li>Ready to cut and serve. (keep refrigerated)</li>
+                                </div>
+                                <div class="recipe-image">
+                                    <img src="{{ img('valentines/2.jpg') }}" draggable="false">
+                                </div>
+                            </div>
+
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <p><strong>Chewy Double Chocolate Chip Cookies</strong></p>
+                                    <hr>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>1 ¼ cup butter</li>
+                                        <li>2 cups sugar</li>
+                                        <li>2 large eggs</li>
+                                        <li>2 tsp vanilla extract</li>
+                                        <li>2 cups flour</li>
+                                        <li>¾ cup cocoa powder</li>
+                                        <li>1 tsp baking soda</li>
+                                        <li>½ tsp salt</li>
+                                        <li>2 cups chocolate chips</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>Preheat oven to 350 degrees F.</li>
+                                        <li>Cream together the butter, sugar and vanilla with a hand blender.</li>
+                                        <li>Add on egg at a time while mixing.</li>
+                                        <li>Blend in cocoa powder, salt and baking soda.</li>
+                                        <li>Add the flour one cup at a time and fold the chocolate chips in after.</li>
+                                        <li>Bake at 350 degrees F for 8-9 minutes.</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe-image">
+                                    <img src="{{ img('valentines/3.jpg') }}" draggable="false">
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Family Eats</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+                            <h6>Family Eats</h6>
+                            <hr>
+                                <p><strong>Picky Eater Disorder</strong></p>
+                                <hr>
+                                <p>If you thought all family blogs were written by moms, think again. As a Chef, father of two and having a hard working wife. Life sometimes can be very hectic. I find a lot of joy creating delicious food that makes people happy. Even though I run a fully functioning kitchen and often serve between 100 and 200 people through-out a day. I feel the real challenge is making the pickiest of picky eaters happy, "our children". I like to make real fast food, I don’t believe in takeout.</p>
+                                <p>I often get asked how I find the time to cook at home. For the most part I move around the kitchen quickly but I like to think that I cook “smart.” By preparing ahead the small things that take up time such as, cutting vegetables, thawing meat or making some sort of sauce. For most veggies once they're cut you can refrigerate them in cold water and will last over a week. I buy my proteins fresh, cut them into small serving sizes and freeze them in thin layers for quicker thawing. Your pantry can be your best friend, having a can of tomato sauce, noodles, rice, some tortilla wraps or even a jar of pesto can help out tremendously. I often make my wife and my lunches with left overs from dinner and make the kids lunches while making dinner or prepare them a couple days at a time to get ahead of the game.!</p>
+                                <p>Like many homes, our lives are centred in the kitchen, homework, calendars, to do lists and of course food. My kids are always willing to help. A blessing and a curse as I'm sure many of you know. I feel having them there in the action makes them respect the ingredients more and encourages them to try things, they wouldn’t try if I just put it in front of them at the dinner table.</p>
+                                <p>I'm not going to lie: the hours between 3:30 and 6:30 are the craziest but we give it our best shot. Many times ending up with a sandwich on the table for the kids while I'm in the pantry, stuffing my face with chocolate chips or Doritos. Here I have provided you with some of my family favourites that are quick, easy and healthy. But, most of all lots of fun for the kids to create.</p>
+
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <p><strong>Texas Chicken Fingers</strong></p>
+                                    <p><i>Yields: Four</i></p>
+                                    <hr>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>4 chicken breast (cut into strips)</li>
+                                        <li>1 ½ cup of cheddar cheese</li>
+                                        <li>1 ½ tsp kosher salt</li>
+                                        <li>¾ tsp ground pepper</li>
+                                        <li>1 ½ tsp smoked paprika</li>
+                                        <li>¾ tsp chili powder</li>
+                                        <li>¾ tsp cumin</li>
+                                        <li>½ tsp cayenne pepper</li>
+                                        <li>1 tbsp olive oil</li>
+                                        <li>1 ½ cup prepared tomato sauce</li>
+                                        <li>1 jalapeno (thinly sliced)</li>
+                                        <li>2 green onions (sliced thin)</li>
+                                        <li>6 slices bacon (cooked and crumbled)</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>Heat oven to 350 degrees F.</li>
+                                        <li>Combine and mix, salt, pepper, paprika, chili powder, cumin, cayenne pepper, oil and chicken strips.</li>
+                                        <li>Place chicken onto baking sheet lined with tin foil or parchment paper ½ inch away from each other. (be sure not to overlap) Bake chicken on each side for 3-4 minutes.</li>
+                                        <li>Continue on the baking sheet or transfer chicken into a cast iron skillet. Spread 1 tbsp of tomato sauce over each piece of chicken. Sprinkle cheddar cheese and jalapeno on top (keep jalapeno out if they’re too spicy for the kids). Return to the over and increase temperature to 425 degrees F. Bake until cheese is melted about 3-4 minutes.</li>
+                                        <li>Remove from oven and sprinkle green onions and bacon on top. Serve immediately. <br>
+                                        <i>*Optional: serve with ranch dressing for dipping.</i> </li>
+                                    </ol>
+                                </div>
+                                <div class="recipe-image">
+                                    <img src="{{ img('family-eats/1.jpg') }}" draggable="false">
+                                </div>
+                            </div>
+
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <p><strong>Macaroni and Cheese</strong></p>
+                                    <p><i>Yields: Tw0 8' casserole dishes</i></p>
+                                    <hr>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>4 cups elbow macaroni</li>
+                                        <li>½ cup butter</li>
+                                        <li>6 tablespoons all-purpose flour</li>
+                                        <li>2 ½ cups milk</li>
+                                        <li>1 (8 ounce) package cream cheese</li>
+                                        <li>3 teaspoons Dijon mustard</li>
+                                        <li>1 teaspoon ground black pepper</li>
+                                        <li>salt to taste</li>
+                                        <li>4 cups shredded Cheddar cheese</li>
+                                        <li>2 cup dry bread crumbs</li>
+                                        <li>4 tablespoons butter</li>
+                                        <li>2 tablespoons chopped fresh parsley</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>Preheat oven to 400 degrees F (200 degrees C).</li>
+                                        <li>Bring a large pot of lightly salted water to a boil. Cook elbow macaroni in the boiling water, stirring occasionally until cooked through but firm to the bite, 8 to 10 minutes. Drain.</li>
+                                        <li>Melt ½ cup butter in a medium saucepan over medium heat. Stir flour into melted butter and cook until smooth and bubbling, about 1 minute. Mix milk, cream cheese, Dijon mustard, black pepper, and salt into flour-butter mixture; cook, stirring occasionally, until sauce is thickened, about 5 minutes. Mix Cheddar cheese into sauce a little bit at a time then add macaroni at the end; pour into two 8 inch casserole dishes. One can be wrapped and frozen for another night’s dinner.</li>
+                                        <li>Mix bread crumbs, 2 tablespoons melted butter, and parsley together in a bowl; spread over macaroni and cheese.</li>
+                                        <li>Bake in the preheated oven until golden brown, 15 to 20 minutes.</li>
+                                        <li>Serve and enjoy.</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe-image">
+                                    <img src="{{ img('family-eats/2.jpg') }}" draggable="false">
+                                </div>
+                            </div>
+
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <p><strong>Dorito Salad</strong></p>
+                                    <p><i>Yields: Four</i></p>
+                                    <hr>
+                                    <p><strong>Ingredients:</strong></p>
+                                    <ul>
+                                        <li>1 lb medium ground beef</li>
+                                        <li>1 bag of Doritos</li>
+                                        <li>2 tbsp taco seasoning</li>
+                                        <li>2 cups cheddar cheese (shredded)</li>
+                                        <li>1 small red onion (chopped)</li>
+                                        <li>1 tomato (chopped)</li>
+                                        <li>1 avocado (chopped)</li>
+                                        <li>4 cups shredded iceberg lettuce</li>
+                                        <li>¼ cup green onion (sliced)</li>
+                                        <li>Sour cream for garnish</li>
+                                    </ul>
+                                    <p><strong>Instructions:</strong></p>
+                                    <ol>
+                                        <li>In medium sauce pot; cook ground beef with taco seasoning. Once cooked drain out access fat.</li>
+                                        <li>Place Doritos on a plate. Spread ¼ of cooked ground beef evenly over Doritos.</li>
+                                        <li>Sprinkle chopped iceberg lettuce, tomato, red onion, avocado and green onion. Garnish with sour cream and serve.</li>
+                                    </ol>
+                                </div>
+                                <div class="recipe-image">
+                                    <img src="{{ img('family-eats/3.jpg') }}" draggable="false">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Destination Wedding</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+                                <h6>Destination Wedding</h6>
+                                <hr>
+
+                                <p><strong>About to pop the question?</strong></p>
+
+                                <p>The beautiful four words that will begin the next best chapter for you and your loved ones life together! The most important day of your life will be something you remember forever. There&#39;s a lot to think about after she/he says yes. Where will you host your special day?  What will the ambience be like? What will you serve your guests? And obviously, how much will your big day cost?</p>
+                                <p>There have been a lot of new trends when it comes to weddings. Venues have changed. Many people are now having there receptions at non-traditional settings opposed to an event/reception hall, that may come with a hefty bill.</p>
+                                <p>Have you ever thought of getting married at a Golf Resort? I know what you&#39;re thinking. You don’t like golf? Maybe it would be too expensive? What kind of food is served? Do you have to be a member?</p>
+                                <p>Golf courses are becoming beautiful venues to host a lot more than just golf tournaments. Here at Rochester Place Golf Club and Resort our fully renovated patio and lush landscaping done by Landscape Effects Group, offers a beautiful backdrop to compliment your day.  And that’s not all, the entire kitchen and restaurant area has been completely renovated into a pleasantly modern venue to host your special event. The ability to have your ceremony, wedding pictures and reception without traveling from place to place makes the day that much easier and less stressful. The ceremony can be held on our impressive patio surrounded by fire and water features. The course creates a beautiful landscaped atmosphere to capture some breath taking photography. Guests can have a cocktail at this time until the bride and groom return from their photo session! Then it’s time for the party to begin!</p>
+                                <p>The days of reception hall caterers are long gone! In lieu of choosing from a selection of basic surf and turf options, couples are opting for a more unique approach to their wedding day eats.</p>
+                                <p>As the Head Chef here at Rochester Place, I'm writing this blog to explain the unique food that could be served out of our kitchen and the not so basic styles in which it can be served. Everyone knows about the traditional sit down dinner experience in which we definitely do offer. It’s a good way for guests to interact with the 8 – 12 people at their table for 45 plus minutes. There are many styles of serving that are very different that you may not know are available. Let’s be honest here, when it comes to everyone's favourite part of the day, the menu takes the cake!</p>
+
+                            <p><strong>Food stations: the best of both worlds</strong></p>
+
+                            <p>Themed stations provide the option for personalized grub choices that are truly endless. You can’t decide between serving Italian cuisine or BBQ pulled pork sliders? Maybe a taco bar, seafood station, a beautiful cheese and charcuterie display? We’re here to give you permission to have more options for your guests! Meal stations bring together the best of both worlds by enabling you to have as many cuisine variations as you like! It's also a great way for your guests to spark up a conversation while grabbing their dinner. Drink stations will also set you apart while keeping your guests quenched and satisfied. Mimosa bar? Signature drink specials? Count us in!</p>
+
+                            <p><strong>Lose the Fork</strong></p>
+
+                            <p>Finger food isn’t just for kids anymore! Eliminate the need for silverware with skewers filled with elegant bites. From broccoli fritters, house smoked salmon crostini’s, shrimp ceviche to pistachio encrusted brie wedges served with cranberry-pear sauce, coconut-mango slaw and garnish with chive flowers!! Parkside Grille is The Big Brothers Big Sisters Battle of Hors D’oeuvres Champions for three years running. Favourite dishes shrunk down to bite-size hors d’oeuvres will delight your guests during cocktail hour. We have an Event menu with many options within, but you can always customize your menu with some of your favourites.</p>
+
+                            <div>
+                                <img src="{{ img('wedding-image.jpg') }}" style="object-fit:cover;height: 300px;width: 100%; margin-top: 1rem; margin-bottom: 2rem;">
+                            </div>
+
+                            <p><strong>Giving your guests an option</strong></p>
+
+                            <p>Torn between two or three different dishes? Not sure if you want to serve chicken as the entree or a nice piece of beef tenderloin smothered in mushroom gravy. If you choose to serve both as a family style meal that could cost a fortune. Here at Rochester Place you can have your guests choose between a couple dishes for their main course, their appetizer and even their dessert. Individually plated meals have more of a presentation and gourmet feel. Making your guests happy with the plate of their choice and your wallet as well. </p>
+
+                            <p>Come check out what Rochester Place has in store for you and let us be your destination wedding.</p>
+
+                            <p>- Chef Kirk Sereduik</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-2">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image"><img src="{{ img('parkside__header.jpg') }}" draggable="false"></div>
+                <h5>Learn More</h5>
+                <div class="row more-row">
+                    <div>
+                    <h6>Bring Your Appetite</h6>
+                    <hr>
+                    <p>The Parkside Grille at Rochester Place is more than a clubhouse restaurant – it’s a dining experience that truly raises the game. Featuring locally-sourced ingredients, the menu is all about flavour, freshness and flair with an eclectic gourmet mix of options, ranging from burgers, sandwiches and wraps to succulent multi-course dinners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-middle">
+        <div class="content-middle-top">
+            <a href="/../resources/assets/documents/2017menu.pdf" target="_blank" class="modal-3">
+                <figure class="tall">
+                    <img src="{{ img('restaurant/3.jpg') }}" draggable="false">
+                    <h6>Local. Fresh <br>Fare.</h6>
+                    <figcaption>Our Menu</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-middle-bottom m-mb">
+            <a href="#" class="modal-trigger modal-4">
+                <figure>
+                    <div class="next-event">
+                        <h6>Up Next:</h6>
+                        <h5>Chris <br> Bolister</h5>
+                        <p>June 2nd 2017</p>
+                    </div>
+                    <figcaption>More Events</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-3">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h2>Modal 3 Content</h2>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-4 event__modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('events__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Events</h5>
+                <div class="row">
+                    <grid>
+                    <column column8>
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Chris Bolister</h6>
+                                <p>June 2nd 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Mark Chichkan</h6>
+                                <p>June 16th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Allesandro Rotond</h6>
+                                <p>June 23rd 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Justin Zuccato</h6>
+                                <p>June 30th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Canada Day | Josh Johnson, inside-outside 11-2 | Joshua and Kristina - a tribute to Canadian Artists and their music Echo Steps 2:30 to 5:00pm | Chris Bolister 6:30 p 9:30pm</h6>
+                                <p>July 1st 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Joshua and Kristina</h6>
+                                <p>July 7th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Mark Chichkan</h6>
+                                <p>July 21st 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Brendan Friel</h6>
+                                <p>July 28th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Mark Chichkan</h6>
+                                <p>August 4th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Crissi Cochrane</h6>
+                                <p>August 18th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+
+                    <div class="event__object">
+                        <hr class="dashed">
+                        <div class="event__ojbect-content">
+                            <div class="event__object-data">
+                                <h6>Max Marshall</h6>
+                                <p>September 18th 2017</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Event Object -->
+                    </column>
+                    <column column4>
+                        <h6 style="margin-top: 0;">Sorry, we're closed on the following dates:</h6>
+                        <ul>
+                            <li>July 14th- closed entire day</li>
+                            <li>August 25th - closed in the evening</li>
+                            <li>September 2nd - closed in the evening</li>
+                            <li>September 29th - closed in the evening</li>
+                            <li>October 21st - closed in the evening</li>
+                        </ul>
+                    </column>
+                </grid>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'layouts/page.twig' %}
+{% block title %}Contact{% endblock %}
+{% block name %}Contact{% endblock %}
+{% block class %}contact-page{% endblock %}
+
+{% block content %}
+    <div class="contact-content">
+        <box>
+            <div class="contact-details">
+                <h4>Contact Us</h4>
+                <hr>
+                <ul>
+                    <li><a href="mailto:info@rochesterplace.com"><i class="fa fa-envelope"></i>info@rochesterplace.com</a></li>
+                    <li><a href="tel:5197282361"><i class="fa fa-phone"></i>519-728-2361</a></li>
+                    <li><i class="fa fa-map-marker"></i>981 County Road 2, Belle River Ontario N0R 1A0</li>
+                </ul>
+                <ul>
+                    <li class="contact__title"><strong>Stefanie Goulding</strong></li>
+                    <li><a href="mailto:stefanie@rochesterplace.com"><i class="fa fa-envelope"></i>stefanie@rochesterplace.com</a></li>
+                    <li><a href="tel:5197282361"><i class="fa fa-phone"></i>519-728-2361 Ext 4</a></li>
+                </ul>
+                <ul>
+                    <li class="contact__title"><strong>Ryan Hughes</strong></li>
+                    <li><a href="mailto:ryan@rochesterplace.com"><i class="fa fa-envelope"></i>ryan@rochesterplace.com</a></li>
+                    <li><a href="tel:5197282361"><i class="fa fa-phone"></i>519-728-2361 Ext 2</a></li>
+                </ul>
+                <h6>Connect with us</h6>
+                <hr>
+                <ul class="socials">
+                        <li><a href="https://www.facebook.com/RochesterPlaceGolfClub"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/RPGolfResort"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/rochester_place_resort/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="form">
+                <div class="form-messages"></div>
+                <form action="{{ path_for('contact.form') }}" method="post" id="contact-form">
+                    <div class="form-row">
+                        <field name="name" type="text" placeholder="Your Name"></field>
+                        <field name="email" type="email" placeholder="Your Emial"></field>
+                    </div>
+                    <textfield name="comments" placeholder="Your Comments"></textfield>
+                    <btn type="submit">Send Message</btn>
+                </form>
+            </div>
+        </box>
+    </div>
+{% endblock %}

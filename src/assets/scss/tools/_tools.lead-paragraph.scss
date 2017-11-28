@@ -1,0 +1,13 @@
+///* ========================================================================
+//   #LEAD PARAGRAPH
+//   ======================================================================== */
+
+  // Create a Lead Paragraph
+
+// Lead Paragraph
+@mixin lead() {
+	@include type(font-size, 30rem, 75rem, 1rem, 1.2rem);
+	margin-bottom: $vertical-rhythm;
+	text-transform: capitalize;
+	font-weight: bold;
+}

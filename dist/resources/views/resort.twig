@@ -1,0 +1,569 @@
+{% extends 'layouts/page-widget.twig' %}
+{% block title %}Resort{% endblock %}
+{% block name %}Stay{% endblock %}
+{% block class %}resort-page{% endblock %}
+
+{% block content %}
+
+    <div class="content-first">
+        <div class="content-first-top">
+            <a href="#" class="modal-trigger modal-1">
+                <figure>
+                    <img src="{{ img('resort/1.jpg') }}" draggable="false">
+                    <h6>Discover</h6>
+                    <figcaption>The Lifestyle</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-first-bottom">
+            <a href="#" class="modal-trigger modal-2">
+                <figure class="tall">
+                    <img src="{{ img('resort/2.jpg') }}" draggable="false">
+                    <h6>Something for <br>everyone.</h6>
+                    <figcaption>View Amenities</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-1">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('lifestyle__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Lifestyles</h5>
+                <div class="row">
+                <div class="media-object">
+                    <div class="media-content content-right">
+                                        <p>Whether you’re looking for nonstop recreation, uninterrupted relaxation, or any combination of both, Rochester Place makes it possible to do as much or as little as you want. Going way beyond golfing, we offer a diverse range of activities and amenities throughout our secluded and private 167-acre resort property. From lounging by the pool and enjoying a cocktail at Parkside Grille to hitting the lake for boating and fishing, paddle boarding and kayaking to aqua-fit and yoga classes, Rochester Place truly is a playground for anything and everyone.</p>
+                    </div>
+                                        <iframe src="https://player.vimeo.com/video/229605308" width="520" height="260" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                </div>
+                <div class="media-object">
+                    <img src="{{ img('resort/1/families.jpg') }}" draggable="false" class="media-image">
+                    <div class="media-content">
+                        <h6>Family</h6>
+                        <hr>
+                        <p>Whether you’re just starting your family or you’re anticipating the delight of grandchildren-to-come, the selection of cottages and trailers offered by Tilbury Auto Sales and Rochester Place Resort provide options for every size family and also for every budget.</p>
+                        <p>Imagine how satisfying life will be for you and your family as you explore the 167 acres of paradise. At Rochester Place, you’ll never hear the kids say, we’re bored. Watch your active and growing family spending quality time splashing in the pool, Rochester Place Resorts is the ultimate lifestyle destination.</p>
+                        <p>Speaking of activities, Rochester Place Resort has cornered the market.  Get to know the families in your new seasonal retreat.  Play a round (or three) of golf.  Invite your friends and extended family to visit your lovely home-away-from-home.  With a sparkling pool, a fun-filled playground, and access to the waters of Lake St. Clair, there’s no end to the simple, refined pleasures you’ll enjoy. </p>
+                    </div>
+                </div>
+                <div class="media-object">
+                    <div class="media-content content-right">
+                        <h6>Seniors</h6>
+                        <hr>
+                        <p>Want to stay active, socialize, and savour the outdoors in your retirement? There’s no place better than Rochester Place. With an immaculate 18-hole golf course, full service restaurant, sparkling pool and a full activities calendar, you’ll have ample opportunity to stay engaged, entertained, and healthy. Take a yoga class, walk our spacious grounds, or socialize at the restaurant...every day will offer a bounty of outdoor leisure choices.</p>
+                        <p>Worry-free living is all yours at the Renaissance Community.  From the lush lawn you never have to mow to the lifeguard-supervised pool and the easy travel from anywhere in Southwestern Ontario, get ready to make memories you and your loved ones will cherish. </p>
+                    </div>
+                    <img src="{{ img('resort/1/seniors.jpg') }}" draggable="false" class="media-image">
+                </div>
+                <div class="media-object">
+                    <img src="{{ img('resort/1/couples.jpg') }}" draggable="false" class="media-image">
+                    <div class="media-content">
+                        <h6>Couples</h6>
+                        <hr>
+                        <p>The ideal place for couples to reconnect and enjoy an escape from the pressures of daily life, Rochester Place is attractive and affordable, whether you choose to purchase one of the nine unique styles of residence or you simply slip away for a weekend, full week, or even a monthly stay. </p>
+                        <p>Rochester Place Resort provides the ideal setting for couples of all ages looking to work on their golf game or just who crave fresh air and fun, and a break from the city life.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-2">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('amenities__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Amenities</h5>
+                <div class="row">
+                    <p>The Lifestyle at Rochester Place is truly unique. Whether you’re looking for nonstop recreation, uninterrupted relaxation, or any combination of both, Rochester Place makes it possible to do as much or as little as you want. With our extensive list of services and amenities coupled with dedicated resort staff, we’re confident that your stay at Rochester Place will be worry free. Whether you’re admiring your fully managed lawn, joining in on the guided activities schedule or just lounging by the life guarded pool you’ll quickly learn that at Rochester Place we’re here to make sure that you have the time to do what you want, when you want, or nothing at all.</p>
+                    <h6>Activites, Entertainment & Amenities</h6>
+                    <ul class="ammenities__list">
+                        <li><img src="{{ img('ammenities/1.png') }}" draggalbe="false">18 Hole Golf Course</li>
+                        <li><img src="{{ img('ammenities/2.png') }}" draggalbe="false"> Parkside Grille 5 Star Restaurant & Patio</li>
+                        <li><img src="{{ img('ammenities/3.png') }}" draggalbe="false"> Kids Club</li>
+                        <li><img src="{{ img('ammenities/4.png') }}" draggalbe="false"> Large Pool & Splash Pad</li>
+                        <li><img src="{{ img('ammenities/5.png') }}" draggalbe="false"> Aqua Fit</li>
+                        <li><img src="{{ img('ammenities/6.png') }}" draggalbe="false"> Yoga</li>
+                        <li><img src="{{ img('ammenities/7.png') }}" draggalbe="false"> Family Fitness Program</li>
+                        <li><img src="{{ img('ammenities/8.png') }}" draggalbe="false"> Enormous Recreation Hall</li>
+                        <li><img src="{{ img('ammenities/9.png') }}" draggalbe="false"> Private Boat Docks & Lake Access</li>
+                        <li><img src="{{ img('ammenities/10.png') }}" draggalbe="false"> Live Entertainment Weekly</li>
+                        <li><img src="{{ img('ammenities/11.png') }}" draggalbe="false"> Ice Cream Socials</li>
+                        <li><img src="{{ img('ammenities/12.png') }}" draggalbe="false"> Chocolate Bar Bingo</li>
+                        <li><img src="{{ img('ammenities/13.png') }}" draggalbe="false"> Playground</li>
+                        <li><img src="{{ img('ammenities/14.png') }}" draggalbe="false"> Arts & Crafts</li>
+                        <li><img src="{{ img('ammenities/15.png') }}" draggalbe="false"> Karaoke</li>
+                        <li><img src="{{ img('ammenities/16.png') }}" draggalbe="false"> Volleyball, Pickleball, & Horse Shoes</li>
+                        <li><img src="{{ img('ammenities/17.png') }}" draggalbe="false"> Pot Luck Meals</li>
+                    </ul>
+                    <h6>Services</h6>
+                    <ul class="ammenities__list">
+                        <li><img src="{{ img('ammenities/18.png') }}" draggalbe="false"> Water</li>
+                        <li><img src="{{ img('ammenities/19.png') }}" draggalbe="false"> WIFI</li>
+                        <li><img src="{{ img('ammenities/20.png') }}" draggalbe="false"> Public Showers & Washrooms</li>
+                        <li><img src="{{ img('ammenities/21.png') }}" draggalbe="false"> Hydro 30 & 50 Amp</li>
+                        <li><img src="{{ img('ammenities/22.png') }}" draggalbe="false"> Unlimited Guest Passes</li>
+                        <li><img src="{{ img('ammenities/23.png') }}" draggalbe="false"> Laundromat</li>
+                        <li><img src="{{ img('ammenities/24.png') }}" draggalbe="false"> Lawn Maintenance</li>
+                        <li><img src="{{ img('ammenities/25.png') }}" draggalbe="false"> On-Site Garbage Pickup</li>
+                        <li><img src="{{ img('ammenities/26.png') }}" draggalbe="false"> Golf Cart Permit</li>
+                        <li><img src="{{ img('ammenities/27.png') }}" draggalbe="false"> 26-Week Season</li>
+                        <li><img src="{{ img('ammenities/28.png') }}" draggalbe="false"> Golf & Restaurant Discounts</li>
+                    </ul>
+                <div class="media-object">
+                <img src="{{ img('resort/2/food.jpg') }}" draggable="false" class="media-image">
+                <div class="media-content">
+                <h6>Bring Your Appetite</h6>
+                <br>
+                <p>The Parkside Grille at Rochester Place is more than a clubhouse restaurant – it’s a dining experience that truly raises the game. Featuring locally-sourced ingredients, the menu is all about flavour, freshness and flair with an eclectic gourmet mix of options, ranging from burgers, sandwiches and wraps to succulent multi-course dinners.</p>
+                </div>
+                </div>
+                <div class="media-object">
+                <div class="media-content content-right">
+                <h6>Tee Time Is Any Time</h6>
+                <hr>
+                <p>The heart of Rochester Place is our pristine 18-hole par-72 course, heralded by many as "Essex County’s Best-Kept Secret." Caressed by the lake breeze, our mature treed fairways offer the feeling of an exclusive private club, but without the expensive greens fees. Here you’ll find a golfer’s paradise offering challenging and rewarding play. For your convenience, we have a well- stocked golf shop and CPGA golf professional on staff. Whether you’re a beginner or seasoned enthusiast, give us a swing and elevate your golfing experience.</p>
+                <p>Whatever you choose, the casual yet sophisticated atmosphere at Parkside Grille heightens your experience with amenities such as our luxuriously comfortable 3000 sq. ft. outdoor lounge, featuring two 60-inch televisions, fireplace and fire pits, as well as a spectacular view of the golf course.</p>
+                </div>
+                <img src="{{ img('resort/2/golf.jpg') }}" draggable="false" class="media-image">
+                </div>
+                <div class="media-object">
+                <img src="{{ img('resort/2/pool.jpg') }}" draggable="false" class="media-image">
+                <div class="media-content">
+                <h6>Poolside Pleasure</h6>
+                <hr>
+                <p>Make a splash. Our resort pool is the perfect place to spend the summer days. With ample lounging amenities, you can sit back and relax while the kids play under the supervision of a lifeguard. Grab a bite or drink at the adjacent Parkside Grille or better yet, let us serve you poolside.</p>
+                </div>
+                </div>
+                <div class="media-object">
+                <div class="media-content content-right">
+                <h6>Float Your Boat</h6>
+                <hr>
+                <p>If you’re a boater, Rochester Place has you covered with quick and easy access to Lake St. Clair. You can dock your boat just steps from your cottage, eliminating the hassle of driving to a marina just to get to your boat. Hit the water whenever the feeling strikes, whether it's for a leisurely cruise or some serious fishing. Our waters are teeming with Muskie, Walleye, Yellow Perch and more. Enjoy your catch-of-the-day out on your cottage patio and raise a glass to reeling in the good life.</p>
+                </div>
+                <img src="{{ img('resort/2/boat.jpg') }}" draggable="false" class="media-image">
+                </div>
+                <div class="media-object">
+                <img src="{{ img('resort/2/playground.jpg') }}" draggable="false" class="media-image">
+                <div class="media-content">
+                <h6>Kid's Play</h6>
+                <hr>
+                <p>The kids can have fun and you can have peace-of-mind with our safe and secure playground area. This conveniently located outdoor space features a jungle gym, monkey bars, swings and a fishing pier for casting a line and reeling in even more good times.</p>
+                </div>
+                </div>
+                <div class="media-object">
+                <div class="media-content content-right">
+                <h6>Junior Golf Program</h6>
+                <hr>
+                <p>Whether it is a fun junior camp experience or weekly league our programs originate with a FUN first attitude. These programs will also teach the next generation the values of honesty, respect and good sportsmanship that will assist them for many years to come.</p>
+                </div>
+                <img src="{{ img('resort/2/junior.jpg') }}" draggable="false" class="media-image">
+                </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-middle">
+        <div class="content-middle-top">
+            <a href="{{ path_for('models') }}">
+                <figure class="tall">
+                    <img src="{{ img('resort/3.jpg') }}" draggable="false">
+                    <h6>Purchase your <br>own recreational <br>cottage <span>Starting as low <br>as $179 bi-weekly</span></h6>
+                    <figcaption>View Models</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-middle-bottom">
+            <a href="#" class="modal-trigger modal-4">
+                <figure>
+                    <img src="{{ img('resort/4.jpg') }}" draggable="false">
+                    <h6>Stay &amp; Play <br>Packages</h6>
+                    <figcaption>Learn More</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-3">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('golf/header6.jpg') }}" draggable="false">
+                </div>
+                <h5>Own Cottages</h5>
+                <div class="row">
+                <p>Welcome to your new place. With the contemporary and luxurious Red Tree Collection of cottages at Rochester Place, you can enjoy all the comforts and conveniences of home in a carefree full-service resort community. Each Red Tree cottage is designed to offer a refined yet casual living environment and can be custom-tailored to fit your specific tastes and preferences. Whichever style and layout you choose, your cottage comes fully appointed and ready to move in, complete with high-end furnishings, sophisticated décor, and state-of-the-art appliances and amenities. Spacious ergonomic design, unique architectural details and premium construction materials all come together here, creating cottages that are modernly-functional, distinctively-crafted and built to last, all set amid a pristine natural landscape. Of course, just outside your cottage door awaits a world of recreation and leisure options, from golfing on our stunning 18-hole professional course to lounging by the resort pool. We invite you to see for yourself why there really is no other place quite like Rochester Place. </p>
+                <div class="model">
+                    <div class="model__description">
+                    <div class="media-object model-object">
+                        <div class="media-content content-right">
+                        <h6>The Chapman</h6>
+                        <hr>
+                        <p>With its striking V-shaped “butterfly” roofline and an inspired mix of architectural details, the Chapman makes a statement of bold refinement. From the covered deck, patio doors welcome you into the light-filled main living area. Add extra flair and warmth with an available two-way electric fireplace offering interior and exterior views. Functionality and convenience abound with modular kitchen and bath cabinetry, generous closet/storage space, premium leather furnishings.</p>
+                    </div>
+                    <img src="{{ img('models/chapman/floorplan.jpg') }}" draggable="false" class="media-image floorplan">
+                    </div>
+                    </div>
+                    <div class="model__gallery">
+                        <img src="{{ img('models/chapman/1.jpg') }}" draggable="false">
+                        <img src="{{ img('models/chapman/2.jpg') }}" draggable="false">
+                        <img src="{{ img('models/chapman/3.jpg') }}" draggable="false">
+                        <img src="{{ img('models/chapman/4.jpg') }}" draggable="false">
+                        <img src="{{ img('models/chapman/5.jpg') }}" draggable="false">
+                        <img src="{{ img('models/chapman/6.jpg') }}" draggable="false">
+                    </div>
+                </div>
+                <!-- End Model -->
+                <div class="model">
+                    <div class="model__description">
+                    <div class="media-object model-object">
+                        <div class="media-content content-right">
+                        <h6>The Boakes</h6>
+                        <hr>
+                        <p>Simplicity, space and style harmoniously come together with the Boakes. This 530 sq. ft. model is an ideal choice for both young families and older couples desiring a hassle-free getaway. With sleeping accommodations for up to six, the Boakes offers an array of comfort and convenience features, including durable low-maintenance leather furnishings, modular cabinetry for ample storage, electric fireplace in the main living area, and two sliding patio doors.</p>
+                        </div>
+                        <img src="{{ img('models/boakes/floorplan.png') }}" draggable="false" class="media-image floorplan">
+                    </div>
+                    </div>
+                    <div class="model__gallery">
+                        <img src="{{ img('models/boakes/1.jpg') }}" draggable="false">
+                        <img src="{{ img('models/boakes/2.jpg') }}" draggable="false">
+                        <img src="{{ img('models/boakes/3.jpg') }}" draggable="false">
+                        <img src="{{ img('models/boakes/4.jpg') }}" draggable="false">
+                        <img src="{{ img('models/boakes/5.jpg') }}" draggable="false">
+                        <img src="{{ img('models/boakes/6.jpg') }}" draggable="false">
+                    </div>
+                </div>
+                <!-- End Model -->
+                <div class="model">
+                    <div class="model__description">
+                    <div class="media-object model-object">
+                        <div class="media-content content-right">
+                        <h6>The Reflection</h6>
+                        <hr>
+                        <p>If you have always had the dream of owning your own cottage but were never quite sure, it’s time to consider the Reflection… a well-designed, practical summer cottage that is built to last, and one you won’t regret calling your own. Receive all the great advantages that come with owning a Northlander and know that you are buying the best on the market today.</p>
+                    </div>
+                    <img src="{{ img('models/reflection/floorplan.jpg') }}" draggable="false" class="media-image floorplan">
+                    </div>
+                    </div>
+                    <div class="model__gallery">
+                        <img src="{{ img('models/reflection/1.jpg') }}" draggable="false">
+                        <img src="{{ img('models/reflection/2.jpg') }}" draggable="false">
+                        <img src="{{ img('models/reflection/3.jpg') }}" draggable="false">
+                        <img src="{{ img('models/reflection/4.jpg') }}" draggable="false">
+                        <img src="{{ img('models/reflection/5.jpg') }}" draggable="false">
+                    </div>
+                </div>
+                <!-- End Model -->
+                <div class="model">
+                    <div class="model__description">
+                    <div class="media-object model-object">
+                        <div class="media-content content-right">
+                        <h6>The Escape</h6>
+                        <hr>
+                        <p>Experience the great outdoors in luxury! Northlander’s Escape Model is perfect for those looking to get outside during the warmer months. This innovative model makes it possible to embrace the Canadian outdoors without giving up the traditional comforts of a quality home. The Escape has great aesthetic features such as vaulted ceilings, durable wood grain-look vinyl flooring, coordinated drapery valances and optional day-night shades.</p>
+                    </div>
+                    <img src="{{ img('models/escape/floorplan.jpg') }}" draggable="false" class="media-image floorplan">
+                    </div>
+                    </div>
+                    <div class="model__gallery">
+                        <img src="{{ img('models/escape/1.jpg') }}" draggable="false">
+                        <img src="{{ img('models/escape/2.jpg') }}" draggable="false">
+                        <img src="{{ img('models/escape/3.jpg') }}" draggable="false">
+                        <img src="{{ img('models/escape/4.jpg') }}" draggable="false">
+                        <img src="{{ img('models/escape/5.jpg') }}" draggable="false">
+                        <img src="{{ img('models/escape/6.jpg') }}" draggable="false">
+                    </div>
+                </div>
+                <!-- End Model -->
+                <div class="model">
+                    <div class="model__description">
+                    <div class="media-object model-object">
+                        <div class="media-content content-right">
+                        <h6>The Berry</h6>
+                        <hr>
+                        <p>Featuring a distinctive sloped roofline and contemporary design throughout, the Berry welcomes you with modern sophistication and comfort. Make your entrance from the covered stone-accented porch and step into the main living area filled with natural light. From kitchen to sleeping quarters, premium materials and amenities are evident everywhere, including stainless steel appliances, pot lights with dimmers, brushed nickel door handles, and ample storage space.</p>
+                    </div>
+                    <img src="{{ img('models/berry/floorplan.jpg') }}" draggable="false" class="media-image floorplan">
+                    </div>
+                    </div>
+                    <div class="model__gallery">
+                        <img src="{{ img('models/berry/1.jpg') }}" draggable="false">
+                        <img src="{{ img('models/berry/2.jpg') }}" draggable="false">
+                        <img src="{{ img('models/berry/3.jpg') }}" draggable="false">
+                        <img src="{{ img('models/berry/4.jpg') }}" draggable="false">
+                        <img src="{{ img('models/berry/5.jpg') }}" draggable="false">
+                        <img src="{{ img('models/berry/6.jpg') }}" draggable="false">
+                    </div>
+                </div>
+                <!-- End Model -->
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-4">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('stayplay__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Stay and Play</h5>
+                <div class="row">
+                <p>Create your own seasonal oasis. Choose from 9 cottage designs with state-of-the-art amenities, spacious layouts and sophisticated comfort. Get away for the weekend and experience what Rochester Place Resort and Southwestern Ontario have to offer. Affordable 2 Day stay and Play packages available.</p>
+                <h6>Booking Information</h6>
+                <br>
+                <ul>
+                    <li>Maximum number of occupants determined by number of people each unit sleeps and is to be strictly observed</li>
+                    <li>Friday to Friday Rentals - Check in after 2 p.m. Check out before 11 a.m.</li>
+                    <li>Saturday to Saturday Rentals - Check in after 2 p.m. Check out before 11 a.m.</li>
+                    <li>Sleeping tents are not allowed on the properties</li>
+                    <li>Each unit has sleeping accommodations and kitchen facilities, BBQ, microwave, television and air conditioning supplied where indicated</li>
+                    <li>Smoking is not allowed in the cottages</li>
+                    <li>Pets are prohibited in all cottages</li>
+                    <li>Payment in full and security deposit of $250 due at time of booking</li>
+                    <li>Site locations are subject to change pending sale of the cottage</li>
+                    <li>Rates are subject to change without notice</li>
+                </ul>
+                <h6>Deposit &amp; Cancellation Policies</h6>
+                <hr>
+                <p>Reservations are accepted for a minimum of 2 nights except holiday weekends. Deposits are accepted by credit card and are payable as indicated. Cheques are not accepted. E-transfers are accepted for properties payable to Rochester Place Resort use Stefanie@rochesterplace.com.</p>
+                <p>Cancellations made 45 days prior to arrival date will be fully refunded. Cancellations made less than 45 days will forfeit rental charges and security deposit will be refunded in full</p>
+                <p>Reservations are expected by 8:00 pm on the check-in day. After this time reservations are forfeit unless permission has been granted. Late Departure is subject to another night charge.</p>
+                <p>Cleaning fee of $100 is charged for rental units left in an unacceptable manner. Deposits will be refunded once cottages have been inspected for damage and cleanliness. Any damages and breakage will be deducted from the deposit at replacement cost and renter may be subject to further charges based on damage if applicable.</p>
+                <h6>Check - in</h6>
+                <p>Cottage guests check in at the Rochester Place Resort. Check-in after 2pm and check out by 11am. Full payment for the balance of the reservation is due upon check-in. There is a mandatory $25 deposit for entrance gate keys. This $25 is refunded when you return the keys at check out. There is no provision for late check out times. Your reservation is accepted in good faith, but all guarantees are subject to guests vacating their cottages on time, in good condition and other circumstances that may be beyond our control.</p>
+                <p><small>** Cottage rates and taxes are subject to change until May 1, of each renting year.</small></p>
+                <h6>Cleaning</h6>
+                <hr>
+                <p>It is the responsibility of the renter to maintain the cleanliness of the cottage. Garbage pickup occurs roadside Monday and Friday mornings before 8am. Please refer to Schedule A: Rules and Regulations.</p>
+                <h6>Rules of Conduct</h6>
+                <p>For the enjoyment of all customers please note: Please adhere to strict quiet hours beginning at 11 p.m. without exception. Refer to Schedule A for all other Rules and Regulations.</p>
+                <table>
+                  <tr>
+                    <td>Rates</td>
+                    <td>Berry/Boakes/Chapman</td>
+                  </tr>
+                  <tr>
+                    <td>2 Nights</td>
+                    <td>$500</td>
+                  </tr>
+                  <tr>
+                    <td>3 Nights</td>
+                    <td>$725</td>
+                  </tr>
+                  <tr>
+                    <td>5 Nights</td>
+                    <td>$1100</td>
+                  </tr>
+                  <tr>
+                    <td>7 Nights</td>
+                    <td>$1500</td>
+                  </tr>
+                  <tr>
+                    <td>1 Month</td>
+                    <td>$4200</td>
+                  </tr>
+                </table>
+                <p><strong>Camping Rates:</strong></p>
+                <hr>
+                <ul>
+                    <li>Camping: 2 Nights - $94 | Weekly - $285 | Monthly - $750</li>
+                    <li>Extra Adults: $4 per day</li>
+                    <li>Boat Well: $10 per day | $70 per week | $180 per month</li>
+                    <li>Reservation Deposits: $30 (48 Hr. Cancellation policy)</li>
+                    <li>Check-in after 2pm/ Check-out before 2pm</li>
+                </ul>
+                <p><strong>Coordinates:</strong></p>
+                <hr>
+                <ul>
+                    <li>Latitude: 42.295651</li>
+                    <li>Longitude: -82.628212</li>
+                </ul>
+                <p><strong>We Supply:</strong></p>
+                <hr>
+                <ul class="u-list__inline u-list__disc">
+                    <li>Glasses</li>
+                    <li>Dishes and Cutlery</li>
+                    <li>Pots and Pans</li>
+                    <li>Tea Kettle</li>
+                    <li>Toaster</li>
+                    <li>Microwave</li>
+                    <li>Coffee Maker</li>
+                    <li>Patio furniture</li>
+                    <li>Barbeque</li>
+                    <li>A/C</li>
+                    <li>Television</li>
+                    <li>Toilet Paper</li>
+                    <li>Fire pit</li>
+                </ul>
+                <p><strong>We Do Not Supply:</strong></p>
+                <hr>
+                <ul class="u-list__disc">
+                    <li>Telephones</li>
+                </ul>
+                <p><strong>You Must Bring:</strong></p>
+                <hr>
+                <ul class="u-list__disc">
+                    <li>Toiletries</li>
+                    <li>Groceries</li>
+                    <li>Linens and Towels</li>
+                </ul>
+                <p><strong>We Recommend:</strong></p>
+                <hr>
+                <ul class="u-list__disc">
+                    <li>Any cooking utensils you feel necessary to prepare meals.</li>
+                </ul>
+                <h6>Extras Included in our Packages</h6>
+                <hr>
+                <p><strong>Gift Cards</strong></p>
+                <hr>
+                <p>We have included some free gift cards for your use on the golf course or within the restaurant while at the resort.</p>
+                <ul class="u-list__disc">
+                    <li>2 or 3 night stay we include one $50 gift card that can be used anywhere throughout the resort.</li>
+                    <li>5 or 7 night stay we include one $100 gift card that can be used anywhere throughout the resort.</li>
+                    <li>With a 1 month stay we include one $200 gift card that can be used anywhere throughout the resort.</li>
+                </ul>
+                <p><strong>Boat Wells</strong></p>
+                <hr>
+                <ul class="u-list__disc">
+                    <li>Boat wells can be reserved for any number of days during your stay at no extra cost and subject to availability.</li>
+                </ul>
+                <p><strong>Golf</strong></p>
+                <hr>
+                <ul class="u-list__disc">
+                    <li>Call the Pro Shop to book your tee times. Special discounted rates apply to stay and play guests.</li>
+                </ul>
+                <p><strong>Amenities</strong></p>
+                <hr>
+                <p>All guests will have access to the following amenities:</p>
+                <ul class="u-list__disc">
+                    <li>Pool and splash pad during hours of operation</li>
+                    <li>Public washrooms</li>
+                    <li>Playground</li>
+                    <li>Boat well, ramp and storage area</li>
+                    <li>Entertainment facility</li>
+                    <li>All activities schedule within the monthly calendar</li>
+                    <li>18 hole golf course</li>
+                    <li>Foot golf holes</li>
+                    <li>Full service restaurant</li>
+                    <li>Pay Phone</li>
+                    <li>Horseshoe Pits</li>
+                    <li>Bocce Ball</li>
+                    <li>Volleyball</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-last">
+        <div class="content-last-full">
+            <a href="{{ img('map.pdf') }}" target="blank">
+                <figure>
+                    <img src="{{ img('resort/5.jpg') }}" draggable="false">
+                    <h6>Renaissance Community <span>Now Open</span></h6>
+                    <figcaption>View Map</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-5 map__modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <img src="{{ img('map2.jpg') }}" draggalbe="false" class="map__modal-image">
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-last laster">
+        <div class="content-last-full">
+            <a href="#" class="modal-trigger modal-6">
+                <figure>
+                    <img src="{{ img('op-thumb.jpg') }}" draggable="false">
+                    <h6 style="text-shadow: 0 0 5px 0 rgba(0, 0, 0, .6)">Discover Seasonal Resort Living <span> Open House <br> August 19 & 20 | 11AM - 4PM</span></h6>
+                    <figcaption>Learn More</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-6">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('op-header.jpg') }}" draggable="false">
+                </div>
+                <h5>Open House | August 19 & 20 | 11AM - 4PM </h5>
+                <div class="row">
+                <grid>
+                <column column3>
+                    <img src="{{ img('rp_logo.jpg') }}" draggable="false" width="100%">
+                    <img src="{{ img('tilbury_logo.jpg') }}" draggable="false" width="100%">
+                </column>
+                <column column9>
+                    <h6>Join us on August 19th and 20th for our August Open House. Bring the whole family and come see what Rochester Place has to offer - Tour the resort and start planning your seasonal vacation getaway!  Make sure you bring your swimsuits! The pool will be open and we'll be offering pontoon tours on the canal all day. We'll also be offering a FREE BBQ at the Parkside Grille, Activities and Entertainment for the kids. </h6>
+                    <hr>
+                    <p>Rochester Place Resort has gone under redevelopment and opened a section of the park with 30 plus new sites. Beautiful, spacious sites, with mature trees, golf course or water views.</p>
+                    <p>Partnering with Tilbury Auto Sales & R.V. Yamaha, Rochester Place Resort is able to offer a selection of summer vacation cottages from park models to travel trailers.  There is a selection of models to view with a variety of spacious layouts and interior décor packages all available for purchase today.</p>
+                    <ul class="u-list__inline">
+                        <li style="width: atuo; flex: 1 1 0;"><img src="{{ img('open-house/1.jpg') }}" draggable="false" class="u-image__fit"></li>
+                        <li style="width: atuo; flex: 1 1 0;"><img src="{{ img('open-house/2.jpg') }}" draggable="false" class="u-image__fit"></li>
+                        <li style="width: atuo; flex: 1 1 0;"><img src="{{ img('open-house/3.jpg') }}" draggable="false" class="u-image__fit"></li>
+                        <li style="width: atuo; flex: 1 1 0;"><img src="{{ img('open-house/4.jpg') }}" draggable="false" class="u-image__fit"></li>
+                    </ul>
+                    <p>The lifestyle at Rochester Place is truly unique.  Whether you're looking for nonstop recreation, uniterrupted relaxation, or any combination of both, Rochester Place makes it possible to do as much or as little as you want.  With our extensive lust of services and amenities coupled with dedicated resort staff, we're confident that your stay at Rochester Place will be worry free.  Whether you're admiring your fully managed lawn, joining in on the guided activites schedule or just lounging by the life-guarded pool you'll quickly learn that at Rochester Place we're here to make sure that you the time to do what you want, when you want, or nothing at all.</p>
+                    <h6>Communities</h6>
+                    <hr>
+                    <ul style="margin-bottom:2rem;">
+                        <li><strong>Golf View</strong> $6500<small>+HST</small>/year</li>
+                        <li><strong>Legacy</strong> $4800<small>+HST</small>/year</li>
+                        <li><strong>Renaissance</strong> $4000<small>+HST</small>/year</li>
+                    </ul>
+                    <div class="uph">
+                        <a href="{{ img('sc-1.jpg') }}" download><img src="{{ img('sc-1.jpg') }}" draggable="false"></a>
+                        <a href="{{ img('sc-2a.jpg') }}" download><img src="{{ img('sc-2a.jpg') }}" draggable="false"></a>
+                        <a href="{{ img('sc-2.jpg') }}" download><img src="{{ img('sc-2.jpg') }}" draggable="false"></a>
+                    </div>
+                    <strong>
+                    Want to know more about the new Red Tree Community at Rochester Place Golf Club & Resort? Listen to our Experts on Call segment on AM800 with John O'Brien - President of Camping In Ontario. </strong>
+                    <iframe src="https://player.vimeo.com/video/218163806" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin-top: 1rem;margin-bottom:1rem;"></iframe>
+                    <p>Can't make it to our open house this weekend? Book a private tour any day Monday - Friday. To book your tour contact:</p>
+                    <p>Janet Marck - Senior Sales Advisor <a href="tel:5197282361">519-728-2361 ext. 5</a> or website <a href="mailto:Janet@rochesterplace.com">Janet@rochesterplace.com</a></p>
+                    <ul class="u-list__inline" style="flex-wrap: wrap;">
+                        <li style="width: 33.3333%;"><img src="{{ img('open-house/5.jpg') }}" draggable="false" class="u-image__fit" style="object-fit:cover; padding: .25rem;"></li>
+                        <li style="width: 33.3333%;"><img src="{{ img('open-house/6.jpg') }}" draggable="false" class="u-image__fit" style="object-fit:cover; padding: .25rem;"></li>
+                        <li style="width: 33.3333%;"><img src="{{ img('open-house/7.jpg') }}" draggable="false" class="u-image__fit" style="object-fit:cover; padding: .25rem;"></li>
+                        <li style="width: 33.3333%;"><img src="{{ img('open-house/8.jpg') }}" draggable="false" class="u-image__fit" style="object-fit:cover; padding: .25rem;"></li>
+                        <li style="width: 33.3333%;"><img src="{{ img('open-house/9.jpg') }}" draggable="false" class="u-image__fit" style="object-fit:cover; padding: .25rem;"></li>
+                        <li style="width: 33.3333%;"><img src="{{ img('open-house/10.jpg') }}" draggable="false" class="u-image__fit" style="object-fit:cover; padding: .25rem;"></li>
+                    </ul>
+                </column>
+                </grid>
+            </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+{% endblock %}

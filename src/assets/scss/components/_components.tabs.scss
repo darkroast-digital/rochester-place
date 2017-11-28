@@ -1,0 +1,96 @@
+.products {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 3rem;
+	
+	.button {
+		@include button(full, $c-grey-light);
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.tabs__nav {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	
+	@include mq(m) {
+		display: none;
+	}
+	
+	li {
+		padding: .5rem 1rem;
+		cursor: pointer;
+		position: relative;
+		
+		img {
+			max-width: 300px;
+		}
+	}
+}
+
+.tabs__container {
+	padding: 1rem;
+	
+	h6 {
+		display: inline-block;
+		text-align: center;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 3rem;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -1rem;
+			height: 100%;
+			width: 5px;
+			background: $c-primary;
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -1rem;
+			height: 100%;
+			width: 5px;
+			background: $c-primary;
+		}
+	}
+	
+	.tab__drawer {
+		display: none;
+		cursor: pointer;
+		background: $c-grey-lighter;
+		padding: 1rem 2rem;
+		font-family: $g-font-two;
+		font-weight: bold;
+		@include lock(font-size, 30rem, 75rem, 0.889rem, 1rem);
+		@include transition();
+		margin: 0;
+		
+		&:before {
+			display: none;
+		}
+		
+		&:after {
+			display: none;
+		}
+
+		&.active {
+			background: $c-white;
+		}
+
+		@include mq(m) {
+			display: block;
+		}	
+	}
+}
+
+

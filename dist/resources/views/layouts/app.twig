@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="{{ css('app') }}">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#D42D36">
+
+    <!-- Title and Description -->
+
+    <title>Rochester Place | {% block title %}{% endblock %}</title>
+    <meta name="description" content="The heart of Rochester Place Golf Course &amp; Resort is our 18-hole par-72 course, a true gem heralded by many as “Essex County’s Best-Kept Secret.">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="{{ img('fav.png') }}">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Rochester Place Golf &amp; Resort">
+    <meta property="og:description" content="The heart of Rochester Place Golf Course &amp; Resort is our 18-hole par-72 course, a true gem heralded by many as “Essex County’s Best-Kept Secret.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://rochesterplace.com">
+    <meta property="og:site_name" content="Rochester Place">
+    <meta property="og:image" content="{{ img('ogimage.jpg') }}">
+
+</head>
+
+<body>
+
+    <!--[if IE]>
+      <div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
+   <![endif]-->
+
+   <div class="loader"></div>
+
+    <div id="app">
+        <a href="{{ path_for('home') }}" class="brand"><img src="{{ img('logo.png') }}" alt="Rochester Place Golf &amp; Resort"></a>
+        <!-- End Brand-->
+        <div class="borders">
+            <div class="borders-top"></div>
+            <div class="borders-right"></div>
+            <div class="borders-bottom"></div>
+            <div class="borders-left"></div>
+        </div>
+        <!-- End Borders -->
+        <main class="main">
+            {% block content %}
+
+            {% endblock %}
+            <!-- End Content -->
+        </main>
+        <!-- End Main -->
+    </div>
+    <!-- End App -->
+
+    <script src="{{ js('app') }}"></script>
+</body>
+
+<!-- See You Space Cowboy... -->
+
+</html>

@@ -1,0 +1,11 @@
+///* ========================================================================
+//   #ABSOLUTE VERTICAL/ HORIZONTAL ALIGNING
+//   ======================================================================== */
+
+  // Postion Elements In An Equal Manner - Centering
+
+@mixin align($p: absolute, $m: 50%) {
+  position: $p;
+  top: $m;
+  transform: translateY(-$m);
+}

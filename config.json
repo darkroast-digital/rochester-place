@@ -1,0 +1,7 @@
+{
+    "url": "rp2.dev",
+    "watch": [
+        "dist/**/*.php",
+        "dist/**/*.twig"
+    ]
+}

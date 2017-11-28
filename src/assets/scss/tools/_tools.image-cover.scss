@@ -1,0 +1,15 @@
+///* ========================================================================
+//   #Transition
+//   ======================================================================== */
+
+  // Control Transition - $p = properties, $t = time, $e= easing function,
+  // $d= delay
+
+@mixin image-cover($h: 100%, $w: 100%) {
+
+  img {
+  	height: $h;
+    width: $w;
+    object-fit: cover;
+  }
+}

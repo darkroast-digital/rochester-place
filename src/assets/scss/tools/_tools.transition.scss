@@ -1,0 +1,11 @@
+///* ========================================================================
+//   #Transition
+//   ======================================================================== */
+
+  // Control Transition - $p = properties, $t = time, $e= easing function,
+  // $d= delay
+
+@mixin transition($p: all, $t: 300ms, $e: $easeInOutQuad, $d: 0) {
+	transition: $p $t $e;
+  transition-delay: $d;
+}

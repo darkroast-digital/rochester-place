@@ -1,0 +1,130 @@
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 40;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: false;
+    @include transition();
+
+    .container {
+        box-shadow: none;
+    }
+
+    &-background {
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $c-white;
+    }
+
+	&.is--active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+
+	&-content {
+		width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        overflow-y: scroll;
+
+        h5 {
+            background: $c-primary;
+            padding: 2rem 10rem;
+            color: $c-white;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 2rem;
+
+            @include mq(m) {
+                padding-left: 2rem;
+                white-space: nowrap;
+            }
+        }
+
+        p > strong {
+            display: inline-block;
+            margin-top: 2rem;
+        }
+
+        a {
+            color: $c-primary;
+        }
+
+        blockquote {
+            padding-bottom: 2rem;
+        }
+	}
+
+    .cloumn-9 {
+
+        @include mq(m) {
+            max-width: 100%;
+        }
+    }
+
+	   &-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        height: 40px;
+        width: 40px;
+        padding: 0;
+        border-radius: 50%;
+        background: transparent;
+        border: none;
+        background: rgba($c-black, .5);
+
+        &:hover {
+            background: rgba($c-black, 1);
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            height: 3px;
+            width: 20px;
+            background: $c-white;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            height: 3px;
+            width: 20px;
+            background: $c-white;
+        }
+    }
+}
+
+.modal__image {
+    height: 400px;
+    width: 100%;
+
+    @include mq(m) {
+        height: 200px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

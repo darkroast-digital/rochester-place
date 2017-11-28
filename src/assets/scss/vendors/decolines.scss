@@ -1,0 +1,19 @@
+.decolines {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.decolines--fixed {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 20;
+}
+
+.decoline {
+	position: absolute;
+}

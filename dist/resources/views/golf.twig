@@ -1,0 +1,859 @@
+{% extends 'layouts/page.twig' %}
+{% block title %}Golf{% endblock %}
+{% block name %}Golf{% endblock %}
+{% block class %}golf-page{% endblock %}
+
+{% block content %}
+
+    <div class="content-first">
+        <div class="content-first-top short">
+            <a href="#" class="modal-trigger modal-1">
+                <figure>
+                    <img src="{{ img('golf/1.jpg') }}" draggable="false">
+                    <h6>Invest in your <br>game.</h6>
+                    <figcaption>Memberships & Junior Golf</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-first-middle short">
+            <a href="https://rochester-place-golf-club.play.teeitup.com/" target="_blank">
+                <figure>
+                    <img src="{{ img('golf/2a.jpg') }}" draggable="false">
+                    <figcaption>Book a Tee Time</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-first-bottom short">
+            <a href="#" class="modal-trigger modal-2">
+                <figure>
+                    <img src="{{ img('golf/2.jpg') }}" draggable="false">
+                    <figcaption>Tournaments</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-1">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('junior__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Memberships and Junior Golf</h5>
+                <h6 class="row">2017 Golf Memberships</h6>
+                <p class="row">Membership play does not begin until the 2017 season. Please note that weekend availability will be contingent on tournament play. While memberships do not include cart fees, members will receive a 25% discount on this fee.</p>
+                <div class="fees grid">
+                    <div class="column column-6">
+                        <div class="fee">
+                            <h6>7 Day Member</h6>
+                            <hr>
+                            <p>$1,260 + HST</p>
+                        </div>
+                        <div class="fee">
+                            <h6>7 Day Couples</h6>
+                            <hr>
+                            <p>$1,995 + HST</p>
+                        </div>
+                        <div class="fee">
+                            <h6>Weekday Adult Member</h6>
+                            <hr>
+                            <p>$1050 + HST</p>
+                        </div>
+                        <div class="fee">
+                            <h6>Weekday Couples</h6>
+                            <hr>
+                            <p>$1,750 + HST</p>
+                        </div>
+                    </div>
+                    <div class="column column-6">
+                        <div class="fee">
+                            <h6>Junior 7-Day Member</h6>
+                            <hr>
+                            <p>$420 + HST</p>
+                        </div>
+                        <div class="fee">
+                            <h6>Family 7 Day</h6>
+                            <hr>
+                            <p>$2400 + HST</p>
+                        </div>
+                        <div class="fee">
+                            <h6>Member unlimited gas cart</h6>
+                            <hr>
+                            <p>$425 + HST (per person)</p>
+                        </div>
+                        <div class="fee">
+                            <h6>Resort member trail fee</h6>
+                            <hr>
+                            <p>$525 + HST</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="row"><small>*Note: Memberships must be paid in full and are non-refundable.</small></p>
+                <h6 class="row">Jr. Golf Program</h6>
+                <div class="row">
+                    <p>With coach Ryan Hughes leading our junior golf development programs, we guarantee you a positive, fun-filled and exciting golf experience! We offer programs for everyone, from first-time to experienced golfers!</p>
+                    <div class="l-golf__camp">
+                        <div class="l-golf__image">
+                            <img src="{{ img('junior/1.png') }}" draggable="false">
+                        </div>
+                        <div class="l-golf__content">
+                            <h6>TaylorMade After School Program</h6>
+                            <small>Ages 9 &amp; Up</small>
+                            <hr>
+                            <p><strong class="date">Mondays | May 15, &amp; 29 | June 5, 12, 19, 26</strong></p>
+                            <ul class="u-list__disc">
+                                <li>5:00pm to 6:30pm</li>
+                                <li>9 hours of instruction </li>
+                                <li>6 week program</li>
+                                <li>$180 per person</li>
+                                <li>Includes welcome gift package, snack &amp; beverage</li>
+                                <li>Max 12 participants</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-golf__camp">
+                        <div class="l-golf__image">
+                            <img src="{{ img('junior/2.png') }}" draggable="false">
+                        </div>
+                        <div class="l-golf__content">
+                            <h6>Kid’s Camp Program</h6>
+                            <hr>
+                            <p><strong class="date">July 24th to 28th</strong></p>
+                            <ul class="u-list__disc">
+                                <li>SNAG Golf instruction &amp; play (for older kids)</li>
+                                <li>Swimming &amp; water activities</li>
+                                <li>Basketball, fishing, volleyball &amp; soccer</li>
+                                <li>Arts &amp; Crafts, Rainy day movies, Nature walks</li>
+                                <li>Carnival day &amp; more!</li>
+                                <li>Ages 5 &amp; up $325. $300 for 2 or more kids</li>
+                                <li>Lunch &amp; 2 snacks included</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-golf__camp">
+                        <div class="l-golf__image">
+                            <img src="{{ img('junior/3.png') }}" draggable="false">
+                        </div>
+                        <div class="l-golf__content">
+                            <h6>Get Golf Ready Program</h6>
+                            <small>Ages 7 &amp; Up</small>
+                            <hr>
+                            <p><strong class="date">Mondays | July 10, 17, 24, 31 | August 14, 21</strong></p>
+                            <ul class="u-list__disc">
+                                <li>2pm to 5pm Monday afternoon</li>
+                                <li>6 hours of instruction + 12 hours of on course monitoring </li>
+                                <li>6 week program</li>
+                                <li>Includes welcome gift package, snack &amp; beverage</li>
+                                <li>Max 12 participants</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="l-golf__camp">
+                        <div class="l-golf__image">
+                            <img src="{{ img('junior/4.png') }}" draggable="false">
+                        </div>
+                        <div class="l-golf__content">
+                            <h6>Monday Junior League </h6>
+                            <small>Ages 9 &amp; Up</small>
+                            <hr>
+                            <p><strong class="date">Mondays | July 10, 17, 24, 31 | August 14, 21</strong></p>
+                            <ul class="u-list__disc">
+                                <li>2pm to 5pm Monday afternoon </li>
+                                <li>6 hours of instruction + 12 hours of on course monitoring</li>
+                                <li>6 week program </li>
+                                <li>Member rate $180 Non Member $230</li>
+                                <li>ncludes welcome gift package, snack &amp; beverage</li>
+                                <li>Max 12 participants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-2">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('golf/header2alt.jpg') }}" draggable="false">
+                </div>
+                <h5>Tournaments</h5>
+                <div class="row">
+                    <grid>
+                        <column column4><img src="{{ img('diamonds.png') }}" draggable="false" width="100%"></column>
+                        <column column8>
+                            <h6 style="margin-bottom: .5rem;">Friday June 9th 2017</h6>
+                            <p>For more information contact Ryan at 519.728.2361 ext 2</p>
+                        </column>
+                    </grid>
+                    <hr class="dashed">
+                </div>
+                <div class="row">
+                    <grid>
+                        <column column4></column>
+                        <column column8>
+                            <h6 style="margin-bottom: .5rem;">Rochester Open</h6>
+                            <p>July 23rd</p>
+                        </column>
+                    </grid>
+                    <hr class="dashed">
+                </div>
+                <div class="row">
+                    <grid>
+                        <column column4></column>
+                        <column column8>
+                            <h6 style="margin-bottom: .5rem;">Octoberfest</h6>
+                            <p>October 1st</p>
+                        </column>
+                    </grid>
+                    <hr class="dashed">
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-middle">
+        <div class="content-middle-full">
+            <a href="#" class="modal-trigger modal-3">
+                <img src="{{ img('grass.jpg') }}" draggable="false">
+                <figure>
+                    <div class="fee__container">
+                    <div class="trigger__fees">
+                        <p>Regular Season | Weekday Rates</p>
+                        <p>9 Holes - Adult $17.70/$20.00</p>
+                        <p>Junior/ Senior - $15.93/ $18.00</p>
+                    </div>
+                    <div class="trigger__fees">
+                        <p>Regular Season | Weekend Rates</p>
+                        <p>9 Holes - Adult $19.47/$22.00</p>
+                        <p>Junior/ Senior - $17.70/ $20.00</p>
+                    </div>
+                    <div class="trigger__fees">
+                        <p>Spring Fall Rates | Oct 1 - May 15</p>
+                        <p>9 Holes - $15.93/ $18.00</p>
+                    </div>
+                    <div class="trigger__fees">
+                        <p>League Fees</p>
+                        <p>9 Holes/ 20 Rounds - $327.43/ $370.00</p>
+                    </div>
+                    <div class="trigger__fees">
+                        <p>Frequent Player Fees | Walking</p>
+                        <p>9 Holes/ 10 Rounds - $163.72/ $185.00</p>
+                    </div>
+                    </div>
+                    <figcaption>More Course Fees</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-3">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+            <div class="modal__image">
+                <img src="{{ img('golf/header6.jpg') }}" draggable="false">
+            </div>
+            <h5>Course Fees</h5>
+                <div class="fees grid">
+                    <div class="column column-6">
+                    <div class="fee">
+                        <h6>Regular Season "Weekday Rates"</h6>
+                        <hr>
+                        <p><strong>9 Holes - Adult - $17.70/$20.00</strong></p>
+                        <p>Junior/Senior - $15.93/$18.00</p>
+                        <p><strong>18 Holes - Adult - $26.55/$30.00</strong></p>
+                        <p>Junior/Senior - $24.78/$28.00</p>
+                    </div>
+                    <div class="fee">
+                        <h6>Regular Season "Weekend Rates"</h6>
+                        <hr>
+                        <p><strong>9 Holes - Adult - $19.47/$22.00</strong></p>
+                        <p>Junior/Senior - $17.70/$20.00</p>
+                        <p><strong>18 Holes - Adult - $28.32/$32.00</strong></p>
+                        <p>Junior/Senior - $26.55/$30.00</p>
+                        <p><strong>TWILIGHT 18 HOLES After 3:00pm $22.12/$25.00</strong></p>
+                    </div>
+                    <div class="fee">
+                        <h6>Spring Fall Rates (Oct1-May15)</h6>
+                        <hr>
+                        <p><strong>9 Holes - $15.93/$18.00</strong></p>
+                        <p><strong>18 Holes - $23.89/$27.00</strong></p>
+                    </div>
+                    <div class="fee">
+                        <h6>League Fees</h6>
+                        <hr>
+                        <p><strong>9 Holes / 20 Rounds $327.43/$37.00</strong></p>
+                        <p><strong>18 Holes / 20 Rounds $495.588/$560.00</strong></p>
+                    </div>
+                    </div>
+                    <div class="column column-6">
+                    <div class="fee">
+                        <h6>Frequent Player Fees (Walking)</h6>
+                        <hr>
+                        <p><strong>9 Holes / 10 Rounds $163.72/$185.00</strong></p>
+                        <p><strong>18 Holes / 10 Rounds $225.66/$280.00</strong></p>
+                    </div>
+                    <div class="fee">
+                        <h6>Gas Cart</h6>
+                        <hr>
+                        <p><strong>9 Holes – $8.85/$10.00 per rider Member/League $7.08/$8.00</strong></p>
+                        <p><strong>18 Holes – $15.04/$17.00 per rider Member/League $11.50/$13.00</strong></p>
+                    </div>
+                    <div class="fee">
+                        <h6>Pull Cart</h6>
+                        <hr>
+                        <p><strong>9 Holes – Free</strong></p>
+                        <p><strong>18 Holes – Free</strong></p>
+                    </div>
+                    <div class="fee">
+                        <h6>Frequent Player Fees (Walking)</h6>
+                        <hr>
+                        <p><strong>9 Holes/ 10 Rounds – $154.87/$185.00</strong></p>
+                        <p><strong>18 Holes / 10 Rounds- $247.79/$280.00</strong></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-4">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h2>Modal 4 Content</h2>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-last last-has-three-now😶">
+        <div class="content-last-top">
+            <a href="#" class="modal-trigger modal-5">
+                <figure class="tall">
+                    <h6 style="font-weight: normal;color: #666;line-height: 1;font-size: 1.5rem;text-shadow:none;">
+                        Etiquette. <br>
+                        Proshop. <br>
+                        Staff. <br>
+                        Leagues <br>
+                        Instruction. <br>
+                    </h6>
+                    <img src="{{ img('golf/4.jpg') }}" draggable="false">
+                    <figcaption>Learn More</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-last-middle">
+            <a href="https://manager.gallusgolf.com/DownloadApp/466/Rochester-Place-Golf-Course" target="_blank">
+                <figure>
+                    <img src="{{ img('app.jpg') }}" draggable="false">
+                    <figcaption>Download Our App</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-last-bottom">
+            <a href="#" class="modal-trigger modal-6">
+                <figure>
+                    <img src="{{ img('golf/5.jpg') }}" draggable="false">
+                    <h6>Discover. <br> Windsor-Essex' Best Kept Secret</h6>
+                    <figcaption>Our Course</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-5">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image"><img src="{{ img('golf/header5.jpg') }}" draggable="false"></div>
+                <h5>Learn More</h5>
+                <div class="row">
+
+                    <h6>Dress Code &amp; Etiquette</h6>
+                    <hr>
+                    <p>Rochester Place Golf Club and Resort has been designed to capture and reflect the beauty of our naturally landscape. The course has undergone 14 holes or renovation since 2013 creating a facility that is fun, entertaining and challenging for players of all levels. In keeping with our respect for the game of golf, we are committed to our motto of “Redefining Game Enjoyment” ensuring that our members and guests enjoy their experience from golf to dinning. As such, we ask our guests to adhere to our Dress Code and Etiquette guidelines.</p>
+
+                    <div class="accorion js-accordion">
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Dress Code</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>All dress must be presentable. Only properly attired players will be permitted on the golf course. Permissible Attire:</p>
+                            <ul class="u-list__disc">
+                                <li>Golf Shirts and appropriate tee shirts may be worn</li>
+                                <li>Full bodied shirts must be worn at all times.</li>
+                                <li>Bare midriffs, half-shirts, strapless or halter tops and bathing suits are not permitted</li>
+                                <li>Players must wear soft spike golf shoes running shoes or soft soled shoes. No heels, soccer shoes over or boots of any kind are permitted.</li>
+                            </ul>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Avoid Slow Play</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>When your group is not keeping up with the pace of play of the group in front of you:</p>
+                            <ul class="u-list__disc">
+                                <li>Walk at a reasonable speed between shots.</li>
+                                <li>Begin planning your next shot as you approach the ball.</li>
+                                <li>When you reach your ball, check the lie, select your club, visualize your swing and shot, and then play your shot.</li>
+                                <li>From the time you select your club until you actually hit your shot, you should take no more than 30 to 45 seconds.</li>
+                                <li>If you aren't ready to play when it is your turn, encourage one of your fellow players to play.</li>
+                                <li>We encourage ready golf for all of our groups.</li>
+                            </ul>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Maintaining the Course</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <ul class="u-list__disc">
+                                <li>Replace your divots.</li>
+                                <li>Important to repair any pitch marks or indentations caused by the ball hitting the green.</li>
+                                <li>Using a tee or repair tool to repair the mark by working the edges towards the center, without lifting the center of the mark. Do not tear the grass. Finish by smoothing the area with a club or your foot. Try to get the area smooth enough to putt over.</li>
+                            </ul>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>On the Green</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>While on the green, please remember the following:</p>
+
+                            <ul class="u-list__disc">
+                                <li>Don't step on your fellow players putting lines – the imaginary line that connects the ball to the hole.</li>
+                                <li>If your ball is on a player's line, volunteer to mark the ball.</li>
+                                <li>After everyone has putted out, immediately walk to the next tee.</li>
+                            </ul>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Safety</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>For safety's sake, never hit when there's a chance you might be able to reach the group ahead of you, and anytime you hit a shot that you think even has remote chance of hitting any other players, yell "fore" immediately, and make a point of apologizing to any players your ball lands near.</p>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Zero Tolerance</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>Rochester Place Golf Club and Resort is committed to providing a safe, respectful environment for all staff and customers. No physical or verbal abuse will be tolerated.</p>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Golf Course Marshal Authority</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>Golf Course Marshals have the authority to control speed of play and enforce all facility policies and procedures. In consideration of other players, marshals are authorized to control speed of play by requesting that players maintain the daily pace (i.e. skip a hole). Rochester Place Golf Club and Resort reserves the right to pair up groups for the purpose of speed of play.</p>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Valid ID For Reduced Rates</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>Seniors (55 years+) must show valid identification to show proof of age in order to receive reduced rates. Without ID golfers will be charged full rates.</p>
+                            <p>Juniors (18 years and under) may also be impacted by this policy.</p>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Golf Clubs</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>All golfers must have their own set of clubs and a bag to play at Rochester Place Golf Club and Resort. Rental clubs are available.</p>
+                            <p>Foursome Players</p>
+                            <p>Maximum number of players of per tee time is four players.</p>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Alcohol</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>Only alcohol purchased at the golf course is permitted on the golf course. Any outside alcohol will be confiscated.</p>
+
+                        </div>
+                        </div>
+                        <div class="accordion-panel">
+                        <div class="accordion-title js-accordion-title"><p><strong>Power Carts</strong></p></div>
+                        <div class="accordion-body js-accordion-body">
+
+                            <p>Golfers wishing to rent a power cart must be a minimum of 16 years of age and have a valid drivers license. Maximum 2 riders per cart. Individuals are responsible for any damages to power carts.</p>
+
+                        </div>
+                        </div>
+                    </div>
+                    <!-- End Accordion -->
+
+                    <h6>Proshop</h6>
+                    <hr>
+
+                    <p>Lead by Ryan Hughes, Canadian Professional Golfers Association Director of Golf, our staff will welcome you each visit with a warm friendly smile and the first class service you deserve. The team is dedicated to providing that special service moment to each member and guest which demonstrates our commitment and passion for golf.</p>
+                    <p>Our recently renovated Pro Shop will provide the warm welcome you would expect from any renowned Resort facility. Stocked with some of golfs latest equipment and fashion you will find the perfect Rochester Place Golf Club & Resort branded merchandise for a souvenir, a gift or a purchase you will enjoy on your own. Not sure what to purchase as a gift, our gift cards and empower the holder to find exactly what they are looking for worry free. Accompanying our golf merchandise, the Pro Shop serves a variety of alcoholic and non-alcoholic beverage and snacks to get your round started. The Pro Shop also offers an online corporate catalogue enabling you to custom order logo merchandise for your company or corporate outing.</p>
+                    <p>The Pro Shop is also equip with all new Taylor Made rental sets. These sets are replaced each year so our guests will have the best equipment to play with should clubs be required. Love music and have a playlist you want to share with your friends…we also rent Bluetooth speakers for you to enjoy during your round. Come by the Pro Shop and learn more about how we are “Redefining Game Enjoyment”!</p>
+                    <ul class="staff__list">
+                        <li>
+                            <strong>Stefanie Goulding</strong>
+                            <ul>
+                                <li>General Manager</li>
+                                <li>519-728-2361 ext. 4 </li>
+                                <li>stefanie@rochesterplace.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Ryan Hughes</strong>
+                            <ul>
+                                <li>Director of Golf Operations</li>
+                                <li>519-728-2361 ext. 2 </li>
+                                <li>ryanhughes@rochesterplace.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Vince Gagnier</strong>
+                            <ul>
+                                <li>Golf Superintendent</li>
+                                <li>519-728-2361 ext. 6</li>
+                                <li>vince@rochesterplace.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- End Proshop -->
+
+                    <h6>Leagues</h6>
+                    <hr>
+                    <p>LeaguesForging meaningful relationships is the foundation of Golf. Golf Leagues, Tournaments and Theme Nights are the social fabric of a Golf Club. These events bring people together to enjoy a round of golf and socialize before, during and after your round of golf. At Rochester Place Golf Club & Resort we offer variety of Men’s, Women’s, Junior and Couples initiatives each designed to provide this social setting. Our leagues operate on Monday’s Tuesday’s and Wednesday’s with a couple’s themed night occurring once a month of Friday evenings. We also offer two exciting club tournaments, Rochester Open and The International each with its own flare for excitement and entertainment. Our events are unique and push the envelope of golf and entertainment. For more information on how our Leagues and Club Events “Redefine Game Enjoyment” contact Ryan Hughes, Director of Golf</p>
+                    <a href="http://www.rochestermensgolf.ca/">Wednesday Golf League Scores and Stats</a>
+
+                    <!-- End Leagues -->
+
+                    <h6>Hughes Academy of Golf at Rochester Place Golf Club &amp; Resort</h6>
+                    <hr>
+                    <p>Lead by our Canadian PGA Director of Golf, Ryan Hughes, the Hughes Academy of Golf at Rochester Place Golf Club & Resort incorporates technology and methodology to create a specialized program for each student. Ryan uses his vast experience in teaching and coaching to create a personalized instructional program which will take your game to the next level. Ryan’s employs a simple yet effect approach to coaching that utilizes your body’s assets to enable you to reach your peak performance.</p>
+                    <p>Your program will be customized to meet your specific goals and objectives. Programs can be as simple as an individual lesson focused on a specific part of your game to weekly lessons with structured practice routines or customized to incorporate nutrition, wellness and fitness. From beginners to elite athletes Ryan’s coaching will cover it all and improve your life-golf connection.</p>
+
+                    <p><strong>Ryan’s credentials speak for themselves:</strong></p>
+                    <ul class="u-list__disc">
+                        <li>Inductee, City of Oshawa Sports Hall of Fame</li>
+                        <li>Inductee, Ontario College Athletic Association (OCAA) Sports Hall of Fame</li>
+                        <li>Twice nominated for Ontario PGA Head Professional of the Year</li>
+                        <li>Ontario PGA Assistant Professional of the Year</li>
+                        <li>Winner of Ontario PGA Pro/Pro Championship</li>
+                        <li>Winner of Ontario PGA Head Pro/Assistant Pro Championship</li>
+                        <li>University of Windsor Head Golf Coach - 2 time women’s OUA (Ontario University Athletics) Individual Gold Medal Champion</li>
+                        <li>Durham College Head Golf Coach – 2 time OCAA Men’s Gold Medal Team Champions, Individual OCAA Men’s Gold Medal Champion and a OCAA Bronze Medal Team</li>
+                        <li>4 time OCAA Individual Gold Medal Champion as a player</li>
+                        <li>2 time OCAA Gold Medal Team Champion and Captain</li>
+                        <li>Inductee, Durham College Sports Hall of Fame</li>
+                    </ul>
+
+                    <p><strong>Rates as follows</strong></p>
+
+                    <ul class="u-list__disc">
+                        <li>Private Lessons: $50 per ½ hour or $80 per hour</li>
+                        <li>Clinics Available: $100 per hour for 2-6 people.</li>
+                        <li>On Course Coaching Lesson: $175 for 2 hours on course</li>
+                    </ul>
+
+                    <p>Game Makeover Program</p>
+                    <ul class="u-list__disc">
+                        <li><i>$500</i></li>
+                        <li>5 x 1 hour private lessons</li>
+                        <li>1 On Course Coaching Lesson</li>
+                        <li>All sessions will have video feedback using swing app</li>
+                    </ul>
+
+                    <p>Complete Coaching Package</p>
+                    <ul class="u-list__disc">
+                        <li><i>$2000</i></li>
+                        <li>limited to 10 students and includes:</li>
+                        <li>16 x 1 hour private lessons</li>
+                        <li>3 On Course Coaching Sessions</li>
+                        <li>All sessions will have video feedback using swing app</li>
+                        <li>Strength, conditioning and flexibility assessment with 6 Golf Specific personal training sessions</li>
+                        <li>Wellness Assessment with 6 Chiropractic treatments</li>
+                        <li>On course Nutrition program</li>
+                        <li>Daily Nutrition program</li>
+                        <li>Golf Course Data management for 12 rounds using Microsoft band analytics</li>
+                        <li>Detailed practice schedule</li>
+                        <li>Equipment Evaluation and fitting</li>
+                        <li>Tournament Scheduling if required</li>
+                    </ul>
+
+                    <p><i>*Juniors receive a 20% discount on lessons and programs</i></p>
+
+                    <!-- End Academy -->
+
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+        <div class="modal modal-7">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('golf/womensgolfheader.jpg') }}" draggable="false">
+                </div>
+                <h5>Women's Golf Day</h5>
+                <div class="row">
+
+                    <p>Join us on Tuesday June 6th <strong>Ladies golf for FREE after 3:00pm.</strong></p>
+                    <p>Short game demonstrations on the hour at 3, 4 & 5:00pm.  FREE Triple Bogey tasting on the patio!  Learn More about Women's Golf Day at: <a href="https://womensgolfday.com/">https://womensgolfday.com/</a></p>
+                    <p>For more information on any of our events please contact Ryan at 519-728-2361 ext. 1 or e-mail ryanhughes@rochesterplace.com</p>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-6">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('golf/header6alt.jpg') }}" draggable="false">
+                </div>
+                <h5>Our Course</h5>
+                <div class="row">
+                <p>Recognized as one of Southwestern Ontario’s fastest growing Golf Resorts, Rochester Place Golf Club is a parkland style design. The course provides a fun and challenging round of golf for all caliber of players. The completely renovated course meanders through a blend of mature trees, newly sculpted berms alongside strategically placed ponds and waterways to create several risk reward holes. The course conditions rival the best parkland style courses province wide. Some have called our greens, “The Best Putting surfaces in Windsor”.</p>
+                <p>Rochester Place Golf Club can be enjoyed from our forward tees at 5210 yards (Slope 110 & Rating 70.6 for Women) or challenged from or back tees at 6400 yards (Slope 123 & Rating 70.4 for Men). We pride ourselves on pace of play. Our pace of play for 9 holes is 2 hours 5 minutes and 4 hours 10 minutes on a relatively busy day with a pace that can be played much quicker based on course utilization. Due to the course location, Belle River Ontario, you can enjoy one of the longest golf seasons in the country.</p>
+                <p>Come visit us today and discover how we are “Redefining Game Enjoyment”</p>
+                <div class="course-title"><h6><span>1</span> Par 4 | HCP 11</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This opening hole is a short, yet relatively tight Par 4, demanding smart club selection and precision is needed. Mature trees line both sides of the fairway and are particularly tight along the right side, challenging big hitters who drive the green by cutting the corner of this sharp, dogleg. A well-placed, mid-to-long iron off the tee will leave a short approach to the forward sloping green, which is protected by a bunker on the right front and water on the far left.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 315 YRDS</li>
+                        <li><span>S</span> 368 YRDS</li>
+                        <li><span>M</span> 375 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>2</span> Par 5 | HCP 1</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 2 marks the course's first Par 5. For the majority of players, this is a true 3-shot hole, from the tips as well as from the front tees due to the presence of a creek 90 yards in front of the green. The tee shot requires some left-to-right movement to allow any chance of reaching the green in two, since a long, straight drive will likely find the grove of trees through the fairway. If you try to reach the green in two, the second shot must carry over the creek in an upward putting surface that typically features a back right corner pin.</p>
+                    <hr>
+                    <ul class="l-course_details">
+                        <li><span>L</span> 471 YRDS</li>
+                        <li><span>S</span> 515 YRDS</li>
+                        <li><span>M</span> 533 YRDS </li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+
+                <div class="course-title"><h6><span>3</span> Par 4 | HCP 3</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This medium-length Par 4 tightly borders the railway line on the right, requiring a well-placed tee shot between a wide swath of rough and a pond that begins about two-thirds of the way up the left side of the hole and jetting out into the short approach area. Most players will be left with a mid-to-short approach to another front-sloping and large green.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 313 YRDS</li>
+                        <li><span>S</span> 370 YRDS</li>
+                        <li><span>M</span> 382 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+
+                <div class="course-title"><h6><span>4</span> Par 4 | HCP 5</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>A straight tee shot is a premium on this second hole to border the railway line, with out-of-bounds to the right and water along the left for most of the this near 400-yard hole. A flatter green approach can arrive high or be bumped-and-run to the green, although trouble abounds on the left as water continues in play and anything over the green presents a very difficult up and down.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 308 YRDS</li>
+                        <li><span>S</span> 366 YRDS</li>
+                        <li><span>M</span> 377 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+
+                <div class="course-title"><h6><span>5</span> Par 3 | HCP 17</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 5 is the course's first Par 3 and plays anywhere from 130 to 215 yards, featuring an expansive putting surface that can leave players with a very demanding two-putts. Out-of-bounds beckons to the right along the private home property lines, but the wide open entry into the green offers a variety of shot selections to be pursued here.  Hole 5 is an honest and straight up Par 3 that can prove troubling if played to aggressively.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 112 YRDS</li>
+                        <li><span>S</span> 122 YRDS</li>
+                        <li><span>M</span> 142 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>6</span> Par 4 | HCP 7</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This Par 4 runs parallel to private homes on the right for most of the first 250 yards before a small creek cuts across the last quarter of the fairway, leaving longer hitters with a tough decision from the tee. The left side brings a stand of trees into play about half way down the hole. Most players will lay up with a long iron or fairway Medal, leaving a short approach to another large and crowned green, backed by a classic hedgerow feature.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 288 YRDS</li>
+                        <li><span>S</span> 342 YRDS</li>
+                        <li><span>M</span> 400 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+
+                <div class="course-title"><h6><span>7</span> Par 4 | HCP 9</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This medium-length Par 4 can be played safe from the tee with a mid-to-long iron that lands the tee ball comfortably before the water which comes into play at the 265-yard mark. Water protects the highly-elevated green and best rewards high-arching short approaches to a relatively flat green. Pin placement can be especially demanding on this hole as aggressive approaches run the risk of falling off the green leaving a near impossible up and down to save par, bogey or worse!</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 267 YRDS</li>
+                        <li><span>S</span> 342 YRDS</li>
+                        <li><span>M</span> 370 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>8</span> Par 3 | HCP 13</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This short Par 3 features an expansive green that doesn't guarantee par simply by landing your tee shot on the putting surface. Similar to other par three holes on the course, this one plays north-south and is located in an area that is strongly influenced by prevailing winds. While this appears to be an easy hole, club selection and the prevailing winds prove to be the key to success.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 125 YRDS</li>
+                        <li><span>S</span> 155 YRDS</li>
+                        <li><span>M</span> 167 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>9</span> Par 5 | HCP 15</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>The front nine concludes with a long and double-dogleg Par 5 that can play as long as 470- yards from the back tee. The tee shot must be negotiated between two strands of trees toward a dogleg right. From there, the hole takes more of a left bend so position off the tee is crucial if a birdie is the objective here. The majority of players will look to lay up toward a generous landing area 75- yards from the front of the green, which also slopes upward encouraging a healthy run for first putts to a pin usually tucked in the middle to back sector of the green.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 394 YRDS</li>
+                        <li><span>S</span> 456 YRDS</li>
+                        <li><span>M</span> 470 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>10</span> Par 4 | HCP 2</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>The inward nine begins with a medium-length Par 4. The smart play from the tee is a long-iron or fairway Medal to a tight landing area in front of the creek that runs through the fairway at roughly 250- yards. Longer hitters will be tempted to clear the water, but be cautious of the severely upward sloping and elevated green and bunker protecting the back. Missing the green on either side presents a difficult lob wedge shot to pins that usually rest on the back ledge.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 256 YRDS</li>
+                        <li><span>S</span> 306 YRDS</li>
+                        <li><span>M</span> 349 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>11</span> Par 3 | HCP 18</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This longer Par 3 usually plays into a persistent wind which compounds the effect of the large pond flanking the left side of the slightly elevated green. Club selection is crucial for this hole which typically plays longer than it looks from the tee. Solid first shots are welcomed to a deep green that generally breaks back to the water.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 142 YRDS</li>
+                        <li><span>S</span> 152 YRDS</li>
+                        <li><span>M</span> 162 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>12</span> Par 5 | HCP 4</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 12 is the longest hole on the course, appropriately inviting a player's longest effort off the tee with one of the more wider and generous landing areas on the layout. Even the most aggressive hit off the tee will leave a tough decision for the second shot, as a creek about 90- yards before the green and expansive water on the right make going in for two a risky proposition. Most players will find themselves laying up before the creek, leaving a shorter pitch shot to a fairly flat and wide green. This long and tough Par 5 is made more difficult when played into the wind.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 460 YRDS</li>
+                        <li><span>S</span> 514 YRDS</li>
+                        <li><span>M</span> 563 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>12</span> Par 5 | HCP 4</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 12 is the longest hole on the course, appropriately inviting a player's longest effort off the tee with one of the more wider and generous landing areas on the layout. Even the most aggressive hit off the tee will leave a tough decision for the second shot, as a creek about 90- yards before the green and expansive water on the right make going in for two a risky proposition. Most players will find themselves laying up before the creek, leaving a shorter pitch shot to a fairly flat and wide green. This long and tough Par 5 is made more difficult when played into the wind.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 460 YRDS</li>
+                        <li><span>S</span> 514 YRDS</li>
+                        <li><span>M</span> 563 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>13</span> Par 4 | HCP 14</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>This medium-length Par 4 hole features a generous driving area with room to leak the tee shot on the right side of the fairway, which doglegs slightly left. The approach offers a wide but fairly flat green that equally welcomes high approach shots or those of the more bump and run variety. Like most of the newer greens, the putting surface is fairly expansive so getting home in regulation is only half the battle here.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 320 YRDS</li>
+                        <li><span>S</span> 348 YRDS</li>
+                        <li><span>M</span> 356 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>14</span> Par 4 | HCP 10</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 14 offers another slight dogleg left, but this Par 4 hole presents a slightly tighter landing area than its immediate predecessor. This hole invites a variety of approach shots to its large putting surface, which generally plays to slightly uphill pin positions.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 315 YRDS</li>
+                        <li><span>S</span> 375 YRDS</li>
+                        <li><span>M</span> 394 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>15</span> Par 5 | HCP 8</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>The fifteenth hole marks the course's final Par 5, featuring a hard dogleg right that mandates a precisely placed tee shot if a player has birdie or eagle in mind. A long drive will leave the second shot from within the grove of trees along the back and left side of the fairway. Likewise, additional trees await players who try to cut the corner of the dogleg too tight. Tee shots that find the fairway at the bend are usually left with 200 to 225- yards to an upward sloping green protected by bunkers to the right and a series of swales to the front left. This hole is a solid Par 5, requiring three good shots for birdie and par.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 391 YRDS</li>
+                        <li><span>S</span> 465 YRDS</li>
+                        <li><span>M</span> 480 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>16</span> Par 3 | HCP 16</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 16 represents the final Par 3, running parallel to the newly renovated Resort with stunning mobile cottages flanking the green. This hole typically plays longer than it looks. The green is tighter than most, with trouble particularly behind and to the right of the putting surface. Wayward tee shots in any direction will leave a difficult up-and-down to salvage par.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 150 YRDS</li>
+                        <li><span>S</span> 170 YRDS</li>
+                        <li><span>M</span> 180 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>17</span> Par 4 | HCP 6</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>Hole 17 is the shortest and most tempting Par 4 on the course. Even modestly long hitters believe that a tee shot right to the green is negotiable. However, the tall strand of trees protect a clear sight to the green along the right side of the fairway. To scale the strand of trees, the tee shot must be perfectly placed and high enough for gambling players to drive the green. The safer play is a mid-iron to sharp bend, followed by a short pitch to the most undulating green on the course.</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 248 YRDS</li>
+                        <li><span>S</span> 263 YRDS</li>
+                        <li><span>M</span> 272 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                <div class="course-title"><h6><span>18</span> Par 4 | HCP 12</h6><hr class="dashed"></div>
+                <div class="course-description">
+                    <p>The home hole is a medium-length, tight Par 4 to an upward sloping green that demands a well-placed approach regardless of pin placement. A slight dogleg left, the fairway is tree-lined with fairly forgiving rough while the multi-tiered green allows players to earn a final par or birdie, ending a great day on the Rochester Place layout. The beautifully-landscaped patio and clubhouse await!</p>
+                    <hr >
+                    <ul class="l-course_details">
+                        <li><span>L</span> 335 YRDS</li>
+                        <li><span>S</span> 342 YRDS</li>
+                        <li><span>M</span> 386 YRDS</li>
+                    </ul>
+                </div>
+                <!-- End Course Description -->
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+
+{% endblock %}

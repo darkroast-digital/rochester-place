@@ -1,0 +1,227 @@
+{% extends 'layouts/page.twig' %}
+{% block title %}Events{% endblock %}
+{% block name %}Host{% endblock %}
+{% block class %}events-page{% endblock %}
+
+{% block content %}
+
+    <div class="content-first">
+        <div class="content-first-top">
+            <a href="/../resources/assets/documents/events.pdf" target="_blank" class="modal-1">
+                <figure>
+                    <img src="{{ img('events/1.jpg') }}" draggable="false">
+                    <h6>Relax. <br> We got this.</h6>
+                    <figcaption>Events Menu</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-first-bottom">
+            <a href="#" class="modal-trigger modal-2">
+                <figure class="tall">
+                    <img src="{{ img('events/2.jpg') }}" draggable="false">
+                    <h6>Make it a day <br>to remember.</h6>
+                    <figcaption>Golf Tournaments</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-1">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h2>Modal 1 Content</h2>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-2">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('tournament__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Tournaments</h5>
+                <div class="row">
+                <p>Rochester Place Golf Club and Resort has played host to countless Charity Fundraising Tournaments, Golf and Networking Events, Sports Team Fundraising Tournaments, Family Tournaments, Night Golf Tournaments, Friendly gatherings, League Championships and many many more.</p>
+                <p>Our energetic and creative management team has more than 100 years of experience in the hospitality industry. They pride themselves on creating unique tournaments and events which are rooted with Fun & Entertainment at their core. The team begins each event with a structured meeting which covers every aspect required to create your event. We leaving nothing to chance right down to creating a budget which will enable you to forecast revenue and manage expenses. Our process is seamless and through.</p>
+                <p>The team will create unique ideas and themes that will set you apart from other events. Our goal is to ensure your guests enjoy their experience and talk about your event long after it is over. We have several package options to choose from and can fit almost any budget. For more information on how we “Redefine Game Enjoyment” with all events please contact Director of Golf, 
+                <ul>
+                    <li>Ryan Hughes</li>
+                    <li><a href="mailto:ryanhughes@rochesterplace.com">ryanhughes@rochesterplace.com</a></li>
+                    <li><a href="tel:519722361">519.728.2361 Ext. 2</a></li>
+                </ul>
+                </p>
+                <p><a href="{{ document('tournaments.pdf') }}">For More Information View Our Tournament Guide</a></p>
+                <ul class="gallery">
+                    <li><img src="{{ img('tournaments/1.jpg') }}" draggable="false"></li>
+                    <li><img src="{{ img('tournaments/2.jpg') }}" draggable="false"></li>
+                    <li><img src="{{ img('tournaments/3.jpg') }}" draggable="false"></li>
+                    <li><img src="{{ img('tournaments/4.jpg') }}" draggable="false"></li>
+                    <li><img src="{{ img('tournaments/5.jpg') }}" draggable="false"></li>
+                    <li><img src="{{ img('tournaments/6.jpg') }}" draggable="false"></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-middle">
+        <div class="content-middle-top">
+            <a href="#" class="modal-trigger modal-3">
+                <figure class="tall">
+                    <img src="{{ img('events/3.jpg') }}" draggable="false">
+                    <h6>Your Special <br>Day.</h6>
+                    <figcaption>Weddings</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-middle-bottom">
+            <a href="#" class="modal-trigger modal-4">
+                <figure>
+                    <img src="{{ img('events/4.jpg') }}" draggable="false">
+                    <h6>Time to <br>celebrate.</h6>
+                    <figcaption>Private Parties</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-3">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('wedding__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Weddings</h5>
+                <div class="row">
+                <h6>Your Adventure Begins Here.</h6>
+                <p class="strong">Style &amp; Atmosphere</p>
+                <hr>
+                <p>If you don’t want traditional this is your spot. Our contemporary decor coupled with endless decorating opportunities will allow you to transform our space into one that's truly yours.</p>
+                <p class="strong">Venue</p>
+                <hr>
+                <p>Seating for up to 175 comfortably, featuring an outdoor lounge, water feature, fireplace and fire pits, as well as a spectacular view of the golf course.</p>
+                <p class="strong">Cuisine</p>
+                <hr>
+                <p>Many options from passed Hors d’oeuvres, to plated, family style options at all different price points, catering to all food allergies. Offering traditional to innovative menu styles.</p>
+                <p class="strong">Ceremony &amp; Reception</p>
+                <hr>
+                <p>Focus on having it all in one place. Your guests will love the convenience of not having to shuffle from location to location and you'll love the added savings from booking a single venue.</p>
+                <p><a href="{{ document('wedding.pdf') }}" target="_blank">View Our Wedding Guide To Learn More.</a></p>
+                <p><strong>For a tour of our facility or to arrange your next event please contact our General Manager Stefanie Goulding at stefanie@rochesterplace.com -or- call 519.728.2361 Ext. 4</strong></p>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-4">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('events/header5.jpg') }}" draggable="false">
+                </div>
+                <h5>Private Parties</h5>
+                <div class="row">
+                <p>Looking for the perfect space for your next party? Our versatile venue and accommodating staff makes Rochester Place and ideal location for any occasion.</p>
+                <p>Our Private Room offers a casual and comfortable space for groups ranging from small to large all year round. With ample seating,  flexible layout options and big screen TV’s. Combined with our newly renovation patio view golf course we can accommodate any event from grand 200+ person celebration to more intimate dinner parties. </p>
+                <p>Our executive chef has crafted  numerous unique options to cater to any dining needs. Options ranging from Al a Carte, plated dishes or country style serving can leave you rest assured that your guests will experience a mouth watering night out.</p>
+                <p>Let our unique atmosphere and dining experience help shape your next event whether it be a :</p>
+                <ul class="u-list__disc">
+                    <li>Bridal shower</li>
+                    <li>Wedding shower</li>
+                    <li>Anniversary party</li>
+                    <li>Retirement party</li>
+                    <li>Family gathering</li>
+                    <li>Birthday party</li>
+                    <li>Christmas Party</li>
+                    <li>Corporate Party</li>
+                    <li>And More </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="content-last">
+        <div class="content-last-top">
+            <a href="#" class="modal-trigger modal-5">
+                <figure>
+                    <img src="{{ img('events/5.jpg') }}" draggable="false">
+                    <figcaption>Food Service</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="content-last-bottom">
+            <a href="#" class="modal-trigger modal-6">
+                <figure>
+                    <img src="{{ img('events/6.jpg') }}" draggable="false">
+                    <h6>Indoor. <br>Outdoor. <br>Big. <br> Small.</h6>
+                    <figcaption>Our Venue</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal modal-5">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('food-service__header.jpg') }}" draggable="false">
+                </div>
+                <h5>Parkside Grille</h5>
+                <div class="row">
+                <div class="media__object">
+                    <div class="media__object-image"><img src="{{ img('ps-logo.jpg') }}" draggable="false"></div>
+                <div class="media__object-content">
+                    <h6>This isn’t your typical clubhouse restaurant.</h6>
+                    <hr>
+                    <p>The Parkside Grille at Rochester Place Golf Club &amp; Resort is a dining experience that truly raises the game. Whether it’s a quick bite or a special occasion, the Parkside Grille will definitely hit the spot. Crafted with locally-sourced ingredients, the menu is all about flavour, freshness and flair with an eclectic gourmet mix of options, ranging from premium burgers to succulent multi-course dinners. Whatever you choose, the inviting atmosphere at Parkside Grille heightens your experience with amenities such as our newly renovated 3000 sq. ft. outdoor lounge, featuring two 60-inch televisions, fireplace and fire pits.</p>
+                    <p>When it comes to special events, Parkside Grille is in a class by itself. With its blend of modern elegance and casual sophistication, this is the perfect setting for weddings, anniversary parties, or any other important occasion. In particular, our sprawling outdoor lounge makes a beautifully memorable backdrop with cascading water features, designer accents and a spectacular view of the pristine fairway. For your additional convenience, first-class shuttle service can be arranged for weddings, tournaments and community events, making your event completely hassle-free.</p>
+                    <p>Sit back, relax and enjoy the Parkside.</p>
+                </div>
+                </div>
+                <hr class="dashed">
+                    <h6>Parkside Grille is closed for the season.</h6>
+                    <p><a href="{{ path_for('contact') }}">Contact us</a> to book your Christmas Corporate event.</p>
+                <hr class="dashed">
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div class="modal modal-6">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="modal__image">
+                    <img src="{{ img('events/header6.jpg') }}" draggable="false">
+                </div>
+                <h5>Our Venue</h5>
+                <div class="row">
+                <h6>We’re more than a great golf club.</h6>
+                <hr>
+                <p>beyond our championship fairways, we’re also raising the game when it comes to hosting meetings, banquets and receptions. Whatever the event or occasion, Rochester Place can provide the perfect setting, style and service to elevate your gathering to a truly exceptional level.</p>
+                <p>Our space is the right place. Business or pleasure, Rochester Place is the ideal space for your next special event. Our main lounge seats up to 200, and another 120 on our sprawling 3,000 sq. ft. patio lounge with a spectacular view of the golf course. Combining sophisticated elegance and contemporary flair, this inviting space features premium amenities such as an outdoor fireplace, dramatic cascading water feature and plenty of comfortable gathering spaces to make all your guest feel relaxed.</p>
+                <p>Corporate meetings, company events and seminars are always welcome at Rochester Place. In fact, our Parkside Banquet Room is as professional as it gets. This spacious and functional private space is fully equipped with a state-of-the-art multimedia system featuring multiple 60-inch HDTVs, and can be configured to your exact seating and staging requirements.</p>
+                <p>For your additional convenience, first-class shuttle service can be arranged for weddings, tournaments and community events, making your event hassle and worry free.</p>
+                <p>Possibilities as delicious as they are endless. From tastefully traditional to enticingly inventive, our Parkside Grille can craft a menu that’ll satisfy even the most discerning appetites and tastes. Led by Executive Chef Kirk Serediuk, the Parkside Grille culinary team is committed to using only the freshest and highest quality ingredients, sourcing locally as much as possible.</p>
+                <p>We have the expertise and experience to fully plan and execute group menu options for up to 200, with any food allergies or specific health concerns always taken into consideration and gladly accommodated with creative alternatives that don’t sacrifice taste. As well, we can cater any type of meal, from buffet breakfasts to lavish lunches and formal dinners.</p>
+                <p>As a fully licensed venue, we also offer complete professional bar service with creative flair and personality, further adding sophistication and excitement to your event.</p>
+                <p>Make your event unlike any other. Our event planning expertise can help you create a truly original event, custom designed to meet your specific tastes, preferences and requirements. From special themes to creative décor, we’ll work closely with you to ensure every detail is executed flawlessly. As we like to say, “Anything is possible,” and at Rochester Place, it's more affordable and convenient than you might think.</p>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+{% endblock %}

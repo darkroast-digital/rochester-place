@@ -1,0 +1,23 @@
+.accordion {
+	
+	&__title {
+		display: block;
+		background: $c-grey-lighter;
+		border: solid 1px $c-grey-lighter;
+		padding: 1rem 2rem;
+		font-family: $g-font-two;
+		font-weight: bold;
+		@include transition();
+		cursor: pointer;
+	}
+	
+	.active {
+		background: $c-white;
+	}
+	
+	&__content {
+		padding: 2rem;
+		border: solid 1px $c-grey-lighter;
+		border-top: none;
+	}
+}

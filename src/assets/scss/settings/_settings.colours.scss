@@ -1,0 +1,74 @@
+///* ========================================================================
+//   #GLOBAL COLOURS
+//   ======================================================================== */
+
+	// Colour Gallery - Using Open Colour ( https://yeun.github.io/open-color/ )
+
+
+//  General
+
+  // Globably Scoped Colours
+
+$c-red: #FA5252; 
+$c-red-light: lighten($c-red, 10%);
+$c-red-dark: darken($c-red, 15%);
+
+$c-pink: #E64980;
+$c-pink: #2A96E8;
+$c-pink-light: lighten($c-pink, 10%);
+$c-pink-dark: darken($c-pink, 15%);
+
+$c-grape: #BE4BDB;
+$c-grape-light: lighten($c-grape, 10%);
+$c-grape-dark: darken($c-grape, 15%);
+
+$c-violet: #7950F2;
+$c-violet-light: lighten($c-violet, 10%);
+$c-violet-dark: darken($c-violet, 15%);
+
+$c-indigo: #4C6EF5;
+$c-indigo-light: lighten($c-indigo, 10%);
+$c-indigo-dark: darken($c-indigo, 15%);
+
+$c-blue: #228AE6;
+$c-blue-light: lighten($c-blue, 10%);
+$c-blue-dark: darken($c-blue, 15%);
+
+$c-cyan: #15AABF;
+$c-cyan-light: lighten($c-cyan, 10%);
+$c-cyan-dark: darken($c-cyan, 15%);
+
+$c-teal: #12B886;
+$c-teal-light: lighten($c-teal, 10%);
+$c-teal-dark: darken($c-teal, 15%);
+
+$c-green: #51CF66;
+$c-green-light: lighten($c-green, 10%);
+$c-green-dark: darken($c-green, 15%);
+
+$c-lime: #82C91E;
+$c-lime-light: lighten($c-lime, 10%);
+$c-lime-dark: darken($c-lime, 15%);
+
+$c-yellow: #FAB005;
+$c-yellow-light: lighten($c-yellow, 10%);
+$c-yellow-dark: darken($c-yellow, 15%);
+
+$c-orange: #FD7E14;
+$c-orange-light: lighten($c-orange, 10%);
+$c-orange-dark: darken($c-orange, 15%);
+
+$c-grey: #ADB5BD;
+
+$c-grey-light: #DEE2E6;
+$c-grey-lighter: #E9ECEF;
+$c-grey-lightest: #F8F8F8;
+
+$c-grey-dark: #495057;
+$c-grey-darker: #343A40;
+$c-grey-darkest: #212529;
+
+$c-white: #ffffff;
+$c-black: #000000;
+
+$c-font: $c-grey-dark;

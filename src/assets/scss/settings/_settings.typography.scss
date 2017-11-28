@@ -1,0 +1,88 @@
+///* ========================================================================
+//   #GLOBAL FONTS
+//   ======================================================================== */
+
+// Globably Scoped Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+// Avenir
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextLTPro-Light.eot');
+    src: url('../fonts/AvenirNextLTPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextLTPro-Light.woff') format('woff'),
+        url('../fonts/AvenirNextLTPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextLTPro-Bold.eot');
+    src: url('../fonts/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+        url('../fonts/AvenirNextLTPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextLTPro-Heavy.eot');
+    src: url('../fonts/AvenirNextLTPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextLTPro-Heavy.woff') format('woff'),
+        url('../fonts/AvenirNextLTPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+// Declare Font Variables
+
+$g-font-one: 'Avenir';
+$g-font-two: 'Avenir';
+$g-font-mono: 'Roboto Mono';
+
+// Apply Fonts To Elements
+
+html {
+	font-family: $g-font-two;
+	color: $c-font;
+}
+
+body {
+	font-family: $g-font-two;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $g-font-one;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: $g-font-mono;
+}
+
+a {
+	font-family: $g-font-one;
+}

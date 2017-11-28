@@ -1,0 +1,77 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="home">
+        <grid gapless>
+            <column column3>
+                <a href="{{ path_for('resort') }}" class="home-column resort">
+                    <div class="frame">
+                        
+                        <div class="frame-left"></div>
+                        <div class="frame-top"></div>
+                        <div class="frame-right"></div>
+                    </div>
+                    <img src="{{ img('home-stay.jpg') }}" draggable="false">
+                    <h2>Stay</h2>
+                    <figure>
+                        <span>Experience</span>
+                        <span>nonstop recreation, and</span>
+                        <span>uninterrupted relaxation.</span> 
+                    </figure>
+                </a>
+            </column>
+            <column column3>
+                <a href="{{ path_for('golf') }}" class="home-column golf">
+                    <div class="frame">
+                        <div class="frame-left"></div>
+                        <div class="frame-top"></div>
+                        <div class="frame-right"></div>
+                    </div>
+                    <img src="{{ img('home-golf.jpg') }}" draggable="false">
+                    <h2>Play</h2>
+                    <figure>
+                        <span>Discover</span>
+                        <span>how we are</span>
+                        <span>“Redefining Game</span> 
+                        <span>Enjoyment”</span>
+                    </figure>
+                </a>
+            </column>
+            <column column3>
+                <a href="{{ path_for('restaurant') }}" class="home-column restaurant">
+                    <div class="frame">
+                        <div class="frame-left"></div>
+                        <div class="frame-top"></div>
+                        <div class="frame-right"></div>
+                    </div>
+                    <img src="{{ img('home-dine.jpg') }}" draggable="false">
+                    <h2>Dine</h2>
+                    <figure>
+                        <span>Parkside Grille</span>
+                        <span>isn't your</span>
+                        <span>typical clubhouse</span>
+                        <span>restaurant.</span> 
+                    </figure>
+                </a>
+            </column>
+            <column column3>
+                <a href="{{ path_for('events') }}" class="home-column events">
+                    <div class="frame">
+                        <div class="frame-left"></div>
+                        <div class="frame-top"></div>
+                        <div class="frame-right"></div>
+                    </div>
+                    <img src="{{ img('home-host.jpg') }}" draggable="false">
+                    <h2>Host</h2>
+                    <figure>
+                        <span>Plan your next</span>
+                        <span>Golf tournament,</span>
+                        <span>wedding or</span> 
+                        <span>corporate event.</span>
+                    </figure>
+                </a>
+            </column>
+        </grid>
+    </div>
+{% endblock %}

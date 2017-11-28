@@ -1,0 +1,96 @@
+///* ========================================================================
+//   #FORM
+//   ======================================================================== */
+
+.form {
+
+	&-row {
+		display: flex;
+
+		.form-field {
+			margin-right: 1rem;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-field {
+
+		label {
+			display: block;
+			text-transform: capitalize;
+			font-weight: bold;
+			margin-bottom: .5rem;
+			flex: 1 1 0;
+
+			@include mq(m) {
+				display: none;
+			}
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			padding: .25rem;
+			margin-bottom: 1rem;
+			@include radius(small);
+			background: $c-white;
+			border-color: $c-grey;
+
+			&.is--info {
+				border-color: $c-cyan;
+			}
+
+			&.is--success {
+				border-color: $c-lime;
+			}
+
+			&.is--error {
+				border-color: $c-red;
+			}
+
+			&.is--warning {
+				border-color: $c-orange;
+			}
+
+			&:focus {
+				border-color: $c-primary;
+			}
+
+		}
+
+		textarea {
+			display: block;
+			width: 100%;
+			min-height: 125px;
+			padding: .25rem;
+			margin-bottom: 1rem;
+			@include radius(small);
+			background: $c-white;
+			border-color: $c-grey;
+
+			&.is--info {
+				border-color: $c-cyan;
+			}
+
+			&.is--success {
+				border-color: $c-lime;
+			}
+
+			&.is--error {
+				border-color: $c-red;
+			}
+
+			&.is--warning {
+				border-color: $c-orange;
+			}
+
+			&:focus {
+				border-color: $c-primary;
+			}
+
+		}
+	}
+}

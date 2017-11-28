@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="{{ css('app') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#D42D36">
+
+    <!-- Title and Description -->
+
+    <title>Rochester Place | {% block title %}{% endblock %}</title>
+    <meta name="description" content="The heart of Rochester Place Golf Course &amp; Resort is our 18-hole par-72 course, a true gem heralded by many as “Essex County’s Best-Kept Secret.">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="{{ img('fav.png') }}">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Rochester Place Golf &amp; Resort">
+    <meta property="og:description" content="The heart of Rochester Place Golf Course &amp; Resort is our 18-hole par-72 course, a true gem heralded by many as “Essex County’s Best-Kept Secret.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://rochesterplace.com">
+    <meta property="og:site_name" content="Rochester Place">
+    <meta property="og:image" content="{{ img('ogimage.jpg') }}">
+
+</head>
+
+<body>
+
+    <!--[if IE]>
+      <div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
+   <![endif]-->
+   <div class="loader"></div>
+
+    <div id="app">
+        <a href="{{ path_for('home') }}" class="brand subpage-brand"><img src="{{ img('logo.png') }}" alt="Rochester Place Golf &amp; Resort"></a>
+        <!-- End Brand-->
+        <main class="main subpage-content {% block class %}{% endblock %}">
+            <div class="content">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+            <!-- End Content -->
+            <script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?4y9SCalGIIGmXdXUyopSBGDjJJUA6O1f";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+        </main>
+        <!-- End Main -->
+        <footer class="footer footer-widget">
+            <div class="footer-top">
+            <h1>{% block name %}{% endblock %}</h1>
+            </div>
+            <div class="footer-bottom">
+                <div class="menu-trigger">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+                <div class="footer-copyright">
+                    <ul class="footer-socials">
+                        <li><a href="https://www.facebook.com/RochesterPlaceGolfClub" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/RPGolfResort" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/rochester_place_resort/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    Rochester Place Resort 2017
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- End App -->
+
+    <div class="menu">
+        <button class="menu__close"></button>
+        <ul class="menu__content">
+            <li><a href="{{ path_for('resort') }}">Stay</a></li>
+            <li><a href="{{ path_for('golf') }}">Play</a></li>
+            <li><a href="{{ path_for('restaurant') }}">Dine</a></li>
+            <li><a href="{{ path_for('events') }}">Host</a></li>
+            <li><a href="{{ path_for('contact') }}" class="menu__contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- End Menu -->
+
+    <script src="{{ js('app') }}"></script>
+</body>
+
+<!-- See You Space Cowboy... -->
+
+</html>

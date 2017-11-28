@@ -1,0 +1,17 @@
+///* ========================================================================
+//   #BOX
+//   ======================================================================== */
+
+.box {
+    @include grid();
+    background: $c-white;
+    @include shadow(heavy);
+    padding: 2rem;
+}
+
+.container {
+    @include grid($display: block);
+    background: $c-white;
+    @include shadow(heavy);
+    padding-bottom: 2rem;
+}
