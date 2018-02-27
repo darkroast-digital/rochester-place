@@ -142,6 +142,11 @@ body {
                 transform: translateY(0);
             }
         }
+
+        .content-last-full {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 
@@ -371,23 +376,23 @@ hr {
 }
 
 .resort-page {
-    background-image: url('../../../resources/assets/img/resort-bg.jpg');
+    background-image: url('https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/resort-bg.jpg');
 }
 
 .golf-page {
-    background-image: url('../../../resources/assets/img/golf-bg.jpg');
+    background-image: url('https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/golf-bg.jpg');
 }
 
 .events-page {
-    background-image: url('../../../resources/assets/img/events-bg.jpg');
+    background-image: url('https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/events-bg.jpg');
 }
 
 .restaurant-page {
-    background-image: url('../../../resources/assets/img/restaurant-bg.jpg');
+    background-image: url("https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/restaurant-bg.jpg");
 }
 
 .contact-page {
-    background-image: url('../../../resources/assets/img/contact-bg.jpg');
+    background-image: url('https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/contact-bg.jpg');
 }
 
 //
@@ -1723,7 +1728,7 @@ hr.dashed {
     height: 64px;
     margin: -32px 0 0 -32px;
     background: $c-primary;
-    background-image: url('../img/arrows.svg');
+    background-image: url('https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/arrows.svg');
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1766,7 +1771,7 @@ hr.dashed {
 }
 
 .map__header {
-    background-image: url('../img/map-header.jpg');
+    background-image: url('https://res.cloudinary.com/darkroast-digital/image/upload/v1510067699/rochester%20place/map-header.jpg');
 }
 
 .media-object {
@@ -2165,5 +2170,37 @@ hr.dashed {
     .content-last-middle,
     .content-last-bottom {
         height: calc(33.3333% - .65rem);
+    }
+}
+
+
+
+
+.job-callout {
+    margin-bottom: auto;
+    padding: 0.5rem;
+
+    a {
+        
+        * {
+            color: white !important;
+        }
+    }
+
+    h6 {
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 0 !important;
+    }
+
+    h5 {
+        margin: 0;
+        margin-top: 0.5rem;
+        color: white !important;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+    p {
+        color: white !important;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     }
 }
