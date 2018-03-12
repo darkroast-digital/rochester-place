@@ -2,7 +2,8 @@
     "events": [
         {
             "name": "Easter Brunch",
-            "date": "Sunday, April 1st"
+            "date": "Sunday, April 1st",
+            "image": "https://res.cloudinary.com/darkroast-digital/image/upload/v1520885743/rochester%20place/lakeshoremarch2018.jpg"
         },
         {
             "name": "Resort Open House",
