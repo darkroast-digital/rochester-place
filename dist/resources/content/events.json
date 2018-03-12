@@ -1,0 +1,106 @@
+{
+    "events": [
+        {
+            "name": "Easter Brunch",
+            "date": "Sunday, April 1st"
+        },
+        {
+            "name": "Resort Open House",
+            "date": "Saturday, April 21st & Sunday, April 22nd"
+        },
+        {
+            "name": "Paint Night with Konzelmann Winery",
+            "date": "Tuesday, May 1st"
+        },
+        {
+            "name": "Golf Member's Welcome Night",
+            "date": "Friday, May 4th"
+        },
+        {
+            "name": "Battle of the Hor's D'ouevres (@Caesers Windsor)",
+            "date": "Thursday, May 10th"
+        },
+        {
+            "name": "Mother's Day Brunch",
+            "date": "Sunday, May 13th"
+        },
+        {
+            "name": "Resort Open House",
+            "date": "Saturday, May 19th & Sunday, May 20th"
+        },
+        {
+            "name": "Golf Member & Guest 9 and Dine",
+            "date": "Friday, June 1st"
+        },
+        {
+            "name": "Ladies Golf Tournament",
+            "date": "Friday, June 8th"
+        },
+        {
+            "name": "Father's Day Golf Specials",
+            "date": "Sunday, June 17th"
+        },
+        {
+            "name": "Resort Open House",
+            "date": "Saturday, June 23rd & Sunday, June 24th"
+        },
+        {
+            "name": "Canada Day Celebrations",
+            "date": "Sunday, July 1st & Monday July 2nd"
+        },
+        {
+            "name": "Resort Open House",
+            "date": "Saturday, July 28th & Sunday, July 29th"
+        },
+        {
+            "name": "Rochester Open Tournament",
+            "date": "Sunday, July 29th"
+        },
+        {
+            "name": "Parkside Special Event TBD",
+            "date": "Friday, August 10th"
+        },
+        {
+            "name": "Golf Member Club Championship (1st & 2nd Round)",
+            "date": "Friday, August 24th & Sunday, August 26th"
+        },
+        {
+            "name": "Resort Open House",
+            "date": "Saturday, August 25th & Sunday, August 26th"
+        },
+        {
+            "name": "Resort Open House",
+            "date": "Saturday, September 15th & Sunday, Sept 16th"
+        },
+        {
+            "name": "Golf Member's Closing Day",
+            "date": "Friday, October 12th"
+        },
+        {
+            "name": "Parkside Grille Closing Special Event",
+            "date": "Friday, October 19th"
+        }
+    ],
+    "closed": [
+        {
+            "date": "June 30th",
+            "length": "Afternoon into the Evening"
+        },
+        {
+            "date": "Juky 13th",
+            "length": "All Day"
+        },
+        {
+            "date": "September 13th",
+            "length": "Afternoon into the Evening"
+        },
+        {
+            "date": "September 15th",
+            "length": "Afternoon into the Evening"
+        },
+        {
+            "date": "September 29th",
+            "length": "Afternoon into the Evening"
+        }
+    ]
+}

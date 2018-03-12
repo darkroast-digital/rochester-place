@@ -355,8 +355,8 @@
                 <figure>
                     <div class="next-event">
                         <h6>Up Next:</h6>
-                        <h5>Career <br> Fair</h5>
-                        <p>March 3rd 2018</p>
+                        <h5>{{ events.events[0].name }}</h5>
+                        <p>{{ events.events[0].date }}</p>
                     </div>
                     <figcaption>More Events</figcaption>
                 </figure>
@@ -400,166 +400,27 @@
                     <grid>
                     <column column8>
 
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Career Fair</h6>
-                                <p>March 3rd 2018</p>
+                    {% for event in events.events %}
+                        <div class="event__object">
+                            <hr class="dashed">
+                            <div class="event__ojbect-content">
+                                <div class="event__object-data">
+                                    <h6>{{ event.name }}</h6>
+                                    <p>{{ event.date }}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                h6>Season Opening</h6>
-                                <p>March 26th 2018</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Chris Bolister</h6>
-                                <p>June 2nd 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Mark Chichkan</h6>
-                                <p>June 16th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Allesandro Rotond</h6>
-                                <p>June 23rd 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Justin Zuccato</h6>
-                                <p>June 30th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Canada Day | Josh Johnson, inside-outside 11-2 | Joshua and Kristina - a tribute to Canadian Artists and their music Echo Steps 2:30 to 5:00pm | Chris Bolister 6:30 p 9:30pm</h6>
-                                <p>July 1st 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Joshua and Kristina</h6>
-                                <p>July 7th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Mark Chichkan</h6>
-                                <p>July 21st 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Brendan Friel</h6>
-                                <p>July 28th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Mark Chichkan</h6>
-                                <p>August 4th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Crissi Cochrane</h6>
-                                <p>August 18th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
-
-                    <div class="event__object">
-                        <hr class="dashed">
-                        <div class="event__ojbect-content">
-                            <div class="event__object-data">
-                                <h6>Max Marshall</h6>
-                                <p>September 18th 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End Event Object -->
+                        <!-- End Event Object -->
+                    {% endfor %}
+                    
                     </column>
                     <column column4>
                         <h6 style="margin-top: 0;">Sorry, we're closed on the following dates:</h6>
                         <ul>
-                            <li>July 14th- closed entire day</li>
-                            <li>August 25th - closed in the evening</li>
-                            <li>September 2nd - closed in the evening</li>
-                            <li>September 29th - closed in the evening</li>
-                            <li>October 21st - closed in the evening</li>
+                            {% for date in events.closed %}
+                                <li>{{ date.date }} - {{ date.length }}</li>
+                            {% endfor %}
                         </ul>
                     </column>
                 </grid>
