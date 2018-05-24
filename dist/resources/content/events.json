@@ -1,35 +1,6 @@
 {
     "events": [
         {
-            "name": "Easter Brunch",
-            "date": "Sunday, April 1st",
-            "image": "https://res.cloudinary.com/darkroast-digital/image/upload/v1520885743/rochester%20place/lakeshoremarch2018.jpg"
-        },
-        {
-            "name": "Resort Open House",
-            "date": "Saturday, April 21st & Sunday, April 22nd"
-        },
-        {
-            "name": "Paint Night with Konzelmann Winery",
-            "date": "Tuesday, May 1st"
-        },
-        {
-            "name": "Golf Member's Welcome Night",
-            "date": "Friday, May 4th"
-        },
-        {
-            "name": "Battle of the Hor's D'ouevres (@Caesers Windsor)",
-            "date": "Thursday, May 10th"
-        },
-        {
-            "name": "Mother's Day Brunch",
-            "date": "Sunday, May 13th"
-        },
-        {
-            "name": "Resort Open House",
-            "date": "Saturday, May 19th & Sunday, May 20th"
-        },
-        {
             "name": "Golf Member Guest 9 & Dine",
             "date": "Friday, June 1st"
         },

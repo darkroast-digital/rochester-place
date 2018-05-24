@@ -8,12 +8,15 @@ class ComposerStaticInitd5bae475f5dffb17028abde717a29d57
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -24,6 +27,7 @@ class ComposerStaticInitd5bae475f5dffb17028abde717a29d57
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
@@ -43,13 +47,13 @@ class ComposerStaticInitd5bae475f5dffb17028abde717a29d57
         array (
             'Doctrine\\Common\\Inflector\\' => 26,
         ),
-        'C' => 
-        array (
-            'Carbon\\' => 7,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -69,6 +73,10 @@ class ComposerStaticInitd5bae475f5dffb17028abde717a29d57
         'Shiva\\' => 
         array (
             0 => __DIR__ . '/../..' . '/shiva',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -106,10 +114,10 @@ class ComposerStaticInitd5bae475f5dffb17028abde717a29d57
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
-        'Carbon\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
-        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -145,6 +153,7 @@ class ComposerStaticInitd5bae475f5dffb17028abde717a29d57
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd5bae475f5dffb17028abde717a29d57::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd5bae475f5dffb17028abde717a29d57::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitd5bae475f5dffb17028abde717a29d57::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitd5bae475f5dffb17028abde717a29d57::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitd5bae475f5dffb17028abde717a29d57::$classMap;
 
